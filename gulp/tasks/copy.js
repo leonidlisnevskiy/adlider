@@ -12,14 +12,21 @@ gulp.task('copy', function() {
 		svgoPlugins: [{removeViewBox: false}],
 		use: [pngquant()]
 	})))
-		.pipe(gulp.dest(config.build.img)); //create "img" folder
+	.pipe(gulp.dest(config.build.img));
 
-	gulp.src(config.src.fonts + '*.*') //find fonts
-		.pipe(gulp.dest(config.build.fonts)); //create "fonts" folder
+	gulp.src(config.src.fonts + '*.*')
+	.pipe(gulp.dest(config.build.fonts));
 
-	gulp.src(config.src.video + '*.*') //find video
-		.pipe(gulp.dest(config.build.video)); //create "video" folder
+	gulp.src(config.src.video + '*.*')
+	.pipe(gulp.dest(config.build.video));
 
 	gulp.src(config.src.svg + '*.*')
-		.pipe(gulp.dest(config.build.svg));
-	});
+	.pipe(gulp.dest(config.build.svg));
+
+	gulp.src(config.src.root + '*.js')
+	.pipe(gulp.dest(config.build.js));
+});
+
+
+
+
