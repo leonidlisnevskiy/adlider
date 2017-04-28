@@ -1,0 +1,36 @@
+// header
+.header
+	position: relative
+	+clr
+	&__nav
+		font-size: 0
+		vertical-align: top
+		display: inline-block
+		width: 100%
+		position: relative
+	&__menu
+		display: inline-block
+		width: 100%
+		vertical-align: top
+		font-size: 0
+		position: relative
+		padding: 11px 16px
+		will-change: transform, transition
+		-webkit-transition: transform .33s linear
+		+r(768)
+			position: fixed
+			height: 100%
+			right: 0
+			top: 0
+			z-index: 12
+			width: 300px
+			background-color: $main-bg
+			-webkit-transform: translateX(100%)
+			padding: 0
+			overflow-y: auto
+		+r(568)
+			width: 270px
+		+r(480)
+			width: 250px
+		+r(320)
+			width: 220px

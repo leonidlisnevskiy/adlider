@@ -1,0 +1,138 @@
+---
+title: Cabinet
+---
+<!doctype html>
+<html>
+{% include "partials/_head.html" %}
+<body>
+
+	<div class="out">
+
+		<!-- header BEGIN -->
+		<header class="header">
+
+			{% include "partials/_topLine.html" %}
+
+			<div class="inner">
+
+				{% include "partials/_headerNav.html" %}
+
+			</div>
+			<!-- inner END -->
+		</header>
+		<!-- header END -->
+
+		<!-- slider BEGIN-->
+		<div class="slider">
+			<div class="inner">
+				<!-- slider BEGIN -->
+				<div class="slider-preview">
+					<div class="slider__container  js-slider-preview">
+						<div class="slider__item" style="background-image: url('img/slider-img-01.jpg');">
+							<div class="slider__title">Заголовок</div>
+							<div class="slider__desc">Пару предложений с возможностью кликнуть на этот баннер и перейти на страницу подробной информации по той или иной новости.</div>
+							<a href="/" class="btn btn-banner">кликнуть баннер</a>
+						</div>
+
+						<div class="slider__item" style="background-image: url('img/slider-img-01.jpg');">
+							<div class="slider__title">Заголовок 2</div>
+							<div class="slider__desc">Пару предложений с возможностью кликнуть на этот баннер и перейти на страницу подробной информации по той или иной новости.</div>
+							<a href="/" class="btn btn-banner">кликнуть баннер</a>
+						</div>
+
+						<div class="slider__item" style="background-image: url('img/slider-img-01.jpg');">
+							<div class="slider__title">Заголовок 3</div>
+							<div class="slider__desc">Пару предложений с возможностью кликнуть на этот баннер и перейти на страницу подробной информации по той или иной новости.</div>
+							<a href="/" class="btn btn-banner">кликнуть баннер</a>
+						</div>
+					</div>
+				</div>
+				<!-- slider END -->
+			</div>
+		</div>
+		<!-- slider END -->
+
+		<!-- balance BEGIN -->
+		<div class="balance">
+			<div class="inner">
+				<div class="balance-wrapper">
+					<div class="balance-table">
+						<table>
+							<thead>
+								<tr>
+									<td><img src="img/logos/logo-balance.png" alt=""></td>
+									<td><img src="img/logos/logo-pm.png" alt=""></td>
+									<td><img src="img/logos/logo-payeer.png" alt=""></td>
+									<td><img src="img/logos/logo-advcash.png" alt=""></td>
+									<td><img src="img/logos/logo-bitcoin.png" alt=""></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><p>Earned Total:</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+								</tr>
+								<tr>
+									<td><p>Pending Withdrawal:</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+								</tr>
+								<tr>
+									<td><p>Withdrew Total:</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+								</tr>
+								<tr>
+									<td><p>Active Deposit:</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+								</tr>
+								<tr>
+									<td><p>Total Deposit:</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+									<td><p>$ 0.00</p></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- balance-table END -->
+
+					<div class="linked__form">
+						<div class="linked__form-container">
+							<div class="linked__label">
+								<img src="img/svg/icon-linked.svg" alt="Your personal link">
+								<p>Your personal referral link:</p>
+							</div>
+
+							<div class="linked__container">
+								<textarea class="linked__field">https://www.behance.net/Sozidai</textarea>
+								<a href="/" class="btn btn-copy"><img src="img/svg/icon-copy.svg" alt="" style="width: 24px; height: 24px;"> copy </a>
+							</div>
+						</div>
+					</div>
+					<!-- linked__form END -->
+				</div>
+				<!-- balance-wrapper END -->
+			</div>
+		</div>
+		<!-- balance END -->
+
+		{% include "partials/_footer.html" %}
+
+	</div>
+	<!-- out END -->
+
+	<script src="js/app.js"></script>
+</body>
+</html>

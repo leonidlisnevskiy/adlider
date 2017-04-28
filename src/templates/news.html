@@ -1,0 +1,77 @@
+---
+title: Новости
+---
+<!doctype html>
+<html>
+{% include "partials/_head.html" %}
+<body>
+
+	<div class="out">
+
+		{% include "partials/_headerMain.html" %}
+
+		<div class="news-wrapper white-bg">
+			<div class="inner">
+				{% include "partials/_breadcrumbs.html" %}
+
+				<div class="top__title top__title-inside">
+					<i class="icon-news"></i>
+					<h3 class="title-field">{{title}}</h3>
+				</div>
+
+				<div class="grid__items image-left">
+					<div class="grid__item">
+						<div class="grid__img"><img src="img/news-img-00.jpg" alt="Current News Image"></div>
+						<a href="/" class="grid__title">Выбор лицензиата азартных игр</a>
+						<div class="grid__data">23:30 4 Ноября 2016</div>
+						<div class="grid__desc">Наша партнерская программа сфокусирована на вовлечении новых инвестиций и отличается весьма привлекательными условиями. Заведите собственный счет на сайте Zoco, приводите новых...</div>
+					</div>
+					<div class="grid__item">
+						<div class="grid__img"><img src="img/news-img-01.jpg" alt="Current News Image"></div>
+						<a href="/" class="grid__title">Выбор лицензиата азартных игр</a>
+						<div class="grid__data">23:30 4 Ноября 2016</div>
+						<div class="grid__desc">Решение о запуске собственного онлайн - казино предполагает и решение многих других важных вопросов, одним из которых, несомненно, является выбор лицензиата. Приобретение лицензии на проведение азартных игр в сети является обязательным пунктом в этой сфере деятельности при условии ее легальной основы. Только при наличии лицензии Вы получите возможность осуществлять электронные платежи. В противном случае, расчет будет возможен только наличными, что значительно сузит круг ваших потенциальных клиентов и существенно ограничит перспективы вашего дальнейшего развития. <br>Выбор лицензиата – вопрос, имеющий превалирующее значение для вашего будущего бизнеса, поэтому во внимание необходимо принять целый ряд важных факторов. К ним относятся такие серьезные пункты, как установившаяся репутация потенциального лицензиата, длительность и сложность подачи заявки, обязательные условия для предоставления лицензии, объем разовых и регулярных выплат, существующие в той или иной местности правила налогообложения и многие другие вопросы.</div>
+					</div>
+					<div class="grid__item">
+						<div class="grid__img"><img src="img/news-img-02.jpg" alt="Current News Image"></div>
+						<a href="/" class="grid__title">Выбор лицензиата азартных игр</a>
+						<div class="grid__data">23:30 4 Ноября 2016</div>
+						<div class="grid__desc">К ним относятся такие серьезные пункты, как установившаяся репутация потенциального лицензиата, длительность и сложность подачи заявки, обязательные условия для предоставления лицензии, объем разовых и регулярных выплат, существующие в той или иной местности правила налогообложения и многие другие вопросы...</div>
+					</div>
+					<div class="grid__item">
+						<div class="grid__img"><img src="img/news-img-03.jpg" alt="Current News Image"></div>
+						<a href="/" class="grid__title">Выбор лицензиата азартных игр</a>
+						<div class="grid__data">23:30 4 Ноября 2016</div>
+						<div class="grid__desc">Наша партнерская программа сфокусирована на вовлечении новых инвестиций и отличается весьма привлекательными условиями. Заведите собственный счет на сайте Zoco, приводите новых...</div>
+					</div>
+				</div>
+				<ul class="list-pagination">
+					<li><a href=""><<</a></li>
+					<li><a href="/"><</a></li>
+					<li><a href="/">1</a></li>
+					<li><a href="/">...</a></li>
+					<li><a href="/">3</a></li>
+					<li><a href="/">4</a></li>
+					<li class="is-current"><a href="/">5</a></li>
+					<li><a href="/">6</a></li>
+					<li class="is-active"><a href="/">7</a></li>
+					<li><a href="/">...</a></li>
+					<li><a href="/">11</a></li>
+					<li><a href="/">></a></li>
+					<li><a href="/">>></a></li>
+				</ul>
+				<!-- pagination END -->
+			</div>
+		</div>
+		<!-- news-wrapper END -->
+
+		{% include "partials/_register.html" %}
+
+		{% include "partials/_footer.html" %}
+
+	</div>
+	<!-- out END -->
+
+	<script src="js/app.js"></script>
+</body>
+</html>
