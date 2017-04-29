@@ -1,7 +1,24 @@
-//=include lib/jquery-3.1.1.min.js
-//=include lib/slick.min.js
-
 console.log("WELL DONE!");
+
+//autosize
+video_frame();
+$(window).resize(function(){
+	video_frame();
+});
+
+function video_frame(){
+	var video_box = $('.video-holder'),
+		img_box = $('.mobile-image');
+
+	video_box.each(function(){
+		var wrap_box = $(this),
+			wrap_parent = $(".out").width();
+
+		wrap_box.css('left', -(wrap_box.width() - wrap_parent) / 2)
+		img_box.children('img').css('left', -(wrap_box.width() - wrap_parent) / 2)
+	});
+};
+
 
 $(document).ready(function() {
 

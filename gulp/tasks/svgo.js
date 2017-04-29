@@ -6,8 +6,9 @@ var config = require('../config');
 
 gulp.task('svgo', function() {
 	return gulp
-	.src(config.src.img + '/svg/**/*.svg')
+	.src(config.src.img + '/svgo/**/*.svg')
 	.pipe(plumber({
+		errorHandler: config.errorHandler
 	}))
 	.pipe(changed(config.build.img))
 	.pipe(svgmin({
@@ -23,9 +24,4 @@ gulp.task('svgo', function() {
 		}]
 	}))
 	.pipe(gulp.dest(config.build.img));
-});
-
-// update files
-gulp.task('svgo:watch', function() {
-	gulp.watch(config.src.img + '/svgo/**/*.svg', ['svgo']);
 });

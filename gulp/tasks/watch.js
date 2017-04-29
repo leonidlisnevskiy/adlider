@@ -9,6 +9,7 @@ gulp.task('watch', function() {
 	gulp.watch(config.src.fonts + '*.*', ['copy']); //copy from "src"
 	gulp.watch(config.src.js + '**/*.js', ['js']); //to "build" with minify
 	gulp.watch(config.src.icons + '*.png', ['sprite']);
+	gulp.watch(config.src.img + '/svgo/**/*.svg', ['svgo']);
 
 	gulp.watch([
 		config.src.root + 'templates/**/_*.html',
@@ -17,4 +18,4 @@ gulp.task('watch', function() {
 });
 
 // default
-gulp.task('default', ['sass', 'js', 'nunjucks', 'sprite', 'server', 'copy', 'watch', 'svgo']);
+gulp.task('default', ['sass', 'js', 'nunjucks', 'sprite', 'server', 'copy', 'watch']);
