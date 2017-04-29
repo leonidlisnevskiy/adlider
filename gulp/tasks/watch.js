@@ -17,4 +17,4 @@ gulp.task('watch', function() {
 });
 
 // default
-gulp.task('default', ['sass', 'js', 'nunjucks', 'sprite', 'server', 'copy', 'watch']);
+gulp.task('default', ['sass', 'js', 'nunjucks', 'sprite', 'server', 'copy', 'watch', 'svgo']);

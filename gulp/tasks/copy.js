@@ -24,7 +24,7 @@ gulp.task('copy', function() {
 	.pipe(gulp.dest(config.build.svg));
 
 	gulp.src(config.src.root + '*.js')
-	.pipe(gulp.dest(config.build.js));
+	.pipe(gulp.dest(config.build.js + '/vendor'));
 });
 
 
