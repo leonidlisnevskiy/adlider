@@ -44,31 +44,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	var $slider = $(".js-slider");
 
-	$slider.slick({
-		dots: false,
-		arrows: false,
-		slidesToShow: 4,
-		responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
-				dots: true
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: true
-			}
-		}
-		]
-	});
 
 	// Select2 Disable Search Field
 	// $(".js-select").select2({

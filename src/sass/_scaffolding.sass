@@ -11,8 +11,14 @@ textarea
 	outline-color: transparent
 
 // Global
-body a
+a
 	-webkit-transition: all .24s ease-in-out
+p
+	color: $text
+	+font-family($roboto-light)
+	font-size: $text-reg
+	strong
+		color: #071a26
 
 body.is-open
 	.header
@@ -20,3 +26,66 @@ body.is-open
 			-webkit-transform: translateX(0)
 	.header.header__main .header__main-menu
 		-webkit-transform: translateX(0)
+.slick
+	&-prev,
+	&-next
+		outline: none
+		border: none
+		cursor: pointer
+		height: 50px
+		width: 50px
+		padding: 0
+		margin: 0
+		+cover
+		border-radius: 50px
+		&:focus
+			outline: none
+	&-next
+		background-image: url("../img/svgo/arrow-next.svg")
+	&-prev
+		background-image: url("../img/svgo/arrow-prev.svg")
+.slider
+	&-item p
+		font-size: 16px
+		color: $black
+
+.btn
+	&.btn-primary
+		background-color: $cyan
+
+
+.service
+	background-image: url("../img/shape-bg.png")
+	+cover
+	background-color: rgba($cyan, .6)
+	+retina
+		background-image: url("../img/shape-bg@2x.png")
+
+// partners
+.partners
+	background-color: #e9edf1
+	padding: 100px 0 60px 0
+	.list-logos
+		text-align: center
+		width: 100%
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			margin: 0 10px 20px 0
+			width: 30%
+		li .images
+			position: relative
+			width: 160px
+			height: 90px
+			border-radius: 4px
+			box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.40)
+			background-color: $white
+			display: inline-block
+		li .images i, img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+	p
+		margin-bottom: 45px
