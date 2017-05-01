@@ -47,7 +47,12 @@
 .header { position: relative; }
 .header:before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; z-index: 12; pointer-events: none; background-color: rgba(0, 0, 0, 0.4); height: 100%; }
 .header .navbar { border: none; }
-.header .navbar-default { padding-top: 40px; background-color: transparent; }
+.header .navbar-default { padding-top: 40px; background-color: transparent; will-change: transition, background-color, padding-top; transition: background-color 0.24s linear, padding-top 0.22s ease; }
+.header .navbar-default.affix-top { background-color: transparent; }
+.header .navbar-default.affix { background-color: #fff; padding-top: 20px; }
+.header .navbar-default.affix svg #adlider00, .header .navbar-default.affix svg #adlider02 { fill: #000; }
+.header .navbar-default.affix svg path { will-change: transition, fill; transition: fill 0.24s ease; }
+.header .navbar-default.affix .navbar-nav > li > a { color: #000; }
 .header .navbar-default .navbar-nav > li > a { color: #fff; line-height: 1; }
 .header .navbar-right:after { content: ""; display: table; clear: both; }
 .header .navbar-right li img { display: inline-block; vertical-align: middle; margin-right: 2px; }
@@ -109,10 +114,14 @@ body.is-open .header.header__main .header__main-menu { -webkit-transform: transl
 
 .btn.btn-primary { background-color: #24dce0; }
 
-.service { background-image: url("../img/shape-bg.png"); background-position: center center; background-repeat: no-repeat; background-size: cover; background-color: rgba(36, 220, 224, 0.6); }
+.service { background-image: url("../img/shape-bg.png"); background-color: rgba(36, 220, 224, 0.6); padding-bottom: 80px; padding-top: 100px; background-position: center center; background-repeat: no-repeat; background-size: cover; }
+
+.preview { background-color: #f9fafb; background: #f9fafb; }
 
 .partners { background-color: #e9edf1; padding: 100px 0 60px 0; }
-.partners .list-logos { text-align: center; width: 100%; padding: 0; margin: 0; }
+.partners h3 { margin: 0 auto 60px; font-size: 36px; line-height: 1.11; }
+.partners .list-logos { text-align: center; width: 100%; padding: 0; margin: 0; position: relative; }
+.partners .list-logos:after { content: ""; display: block; position: absolute; width: 100%; bottom: 0; left: 0; height: 100px; background: -webkit-linear-gradient(top, transparent 0%, #e9edf1 80%); }
 .partners .list-logos li { display: inline-block; margin: 0 10px 20px 0; width: 30%; }
 .partners .list-logos li .images { position: relative; width: 160px; height: 90px; border-radius: 4px; box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.4); background-color: #fff; display: inline-block; }
 .partners .list-logos li .images i, .partners .list-logos img { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }

@@ -22,6 +22,12 @@ function video_frame(){
 
 $(document).ready(function() {
 
+	$('.navbar').affix({
+		offset: {
+			top: $('.navbar ').height()
+		}
+	});
+
 	var $sliderPreview = $(".js-slider-preview");
 
 	$sliderPreview.slick({

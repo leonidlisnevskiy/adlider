@@ -56,20 +56,41 @@ body.is-open
 
 .service
 	background-image: url("../img/shape-bg.png")
-	+cover
 	background-color: rgba($cyan, .6)
+	padding-bottom: 80px
+	padding-top: 100px
+	+cover
 	+retina
 		background-image: url("../img/shape-bg@2x.png")
+
+// preview
+.preview
+	background-color: $main-bg
+	background: $main-bg
 
 // partners
 .partners
 	background-color: #e9edf1
 	padding: 100px 0 60px 0
+	h3
+		margin: 0 auto 60px
+		font-size: $text-lg //36px
+		line-height: $base-lh
 	.list-logos
 		text-align: center
 		width: 100%
 		padding: 0
 		margin: 0
+		position: relative
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 100%
+			bottom: 0
+			left: 0
+			height: 100px
+			background: -webkit-linear-gradient(top,transparent 0%,#e9edf1 80%)
 		li
 			display: inline-block
 			margin: 0 10px 20px 0

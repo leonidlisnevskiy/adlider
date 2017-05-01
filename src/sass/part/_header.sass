@@ -18,6 +18,21 @@
 		&-default
 			padding-top: 40px
 			background-color: transparent
+			will-change: transition, background-color, padding-top
+			transition: background-color .24s linear, padding-top .22s ease
+			&.affix-top
+				background-color: transparent
+			&.affix
+				background-color: $white
+				padding-top: 20px
+				svg #adlider00,
+				svg #adlider02
+					fill: $black
+				svg path
+					will-change: transition, fill
+					transition: fill .24s ease
+				.navbar-nav > li > a
+					color: $black
 			.navbar-nav > li > a
 				color: $white
 				line-height: 1
