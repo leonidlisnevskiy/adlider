@@ -36,6 +36,8 @@
 			.navbar-nav > li > a
 				color: $white
 				line-height: 1
+				&:hover
+					color: $cyan
 		&-right
 			+clr
 		&-right li img
@@ -45,7 +47,7 @@
 		&-right li a
 			display: inline-block
 			vertical-align: middle
-			margin-top: 2px
+			margin-top: 3px
 		&-brand
 			padding: 0
 		&-nav
@@ -58,6 +60,7 @@
 			padding: 0
 			font-size: $text-sm //14px
 			+font-family($roboto-light)
+			transition: all .24s ease-in-out
 
 // video
 .promo

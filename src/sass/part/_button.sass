@@ -60,6 +60,24 @@
 				top: 8px
 			&:after
 				top: 16px
+	&.btn-rounded
+		border-radius: 50px
+		text-transform: uppercase
+		padding: 19px 45px
+		+font-family($roboto-bld)
+		border: none
+		box-shadow: none
+		outline: none
+		cursor: pointer
+		+nosel
+		&:active, &:focus
+			outline: none
+	&.btn-primary
+		font-size: 16px
+		background-color: $cyan
+		&:hover, &:focus
+			background-color: darken($cyan, 10)
+
 
 
 // btn-mouse
@@ -71,6 +89,19 @@
 	height: 45px
 	border: 2px solid #87959b
 	position: relative
+	display: block
+	will-change: transition, color, border-color
+	transition: all .24s ease-in-out
+	&-fixed
+		position: absolute
+		bottom: -120px
+		left: 50%
+		transform: translateX(-50%)
+		text-decoration: none
+	&:hover
+		border-color: $white
+		&:after
+			background-color: $cyan
 .mouse:after
 	content: ""
 	display: block

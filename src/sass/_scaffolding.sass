@@ -44,15 +44,51 @@ body.is-open
 		background-image: url("../img/svgo/arrow-next.svg")
 	&-prev
 		background-image: url("../img/svgo/arrow-prev.svg")
+
+
 .slider
 	&-item p
 		font-size: 16px
 		color: $black
-
-.btn
-	&.btn-primary
-		background-color: $cyan
-
+	&-review
+		background-color: $main-bg
+		padding-top: 100px
+		padding-bottom: 60px
+		.slick-slider
+			background-color: $white
+		.slick-dots
+			padding: 0
+			bottom: -60px
+		.slick-dots li button
+			border: none
+			outline: none
+			opacity: 1
+			width: 12px
+			height: 12px
+			box-shadow: 0 0 15px 1px $btn-gray
+		.slick-dots li.slick-active button
+			background-color: #14bec0
+			background: #14bec0
+		.review
+			&__item
+				padding: 40px 10px
+				outline: none
+				&:active, &:focus
+					outline: none
+				p
+					margin: 0 auto auto 0
+					color: $text
+					font-size: 18px
+					line-height: 1.55
+				.company
+					margin: 20px auto 40px
+					color: $btn-gray
+					font-size: 16px
+					+font-family($roboto-reg)
+			&__title
+				font-size: 40px
+				+font-family($roboto-light)
+				margin: 0 auto
 
 .service
 	background-image: url("../img/shape-bg.png")
@@ -62,11 +98,35 @@ body.is-open
 	+cover
 	+retina
 		background-image: url("../img/shape-bg@2x.png")
+	.btn-white
+		background-color: $white
+		color: darken($cyan, 10)
+	h2
+		color: $white
+		font-size: $text-lg
+		+font-family($roboto-light)
+		margin: 0 auto 65px
 
 // preview
 .preview
 	background-color: $main-bg
 	background: $main-bg
+	&__desc
+		position: absolute
+		top: 225px
+		transform: translateX(-50%)
+		left: 50%
+		z-index: 22
+		width: 100%
+		h1
+			color: $white
+			+font-family($roboto-light)
+			margin: 0 auto 40px
+			letter-spacing: -1.9px
+		p
+			color: rgba($white, .5)
+			line-height: $md-lh //1.5
+			margin-bottom: 85px
 
 // partners
 .partners
