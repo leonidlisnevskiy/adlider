@@ -45,17 +45,9 @@ body.is-open
 	&-prev
 		background-image: url("../img/svgo/arrow-prev.svg")
 
-
+// slick-dots
 .slider
-	&-item p
-		font-size: 16px
-		color: $black
-	&-review
-		background-color: $main-bg
-		padding-top: 100px
-		padding-bottom: 60px
-		.slick-slider
-			background-color: $white
+	&-review, &-preview
 		.slick-dots
 			padding: 0
 			bottom: -60px
@@ -69,10 +61,31 @@ body.is-open
 		.slick-dots li.slick-active button
 			background-color: #14bec0
 			background: #14bec0
+
+.slider
+	&-item p
+		font-size: 16px
+		color: $black
+	&-review
+		background-color: $main-bg
+		padding-top: 100px
+		padding-bottom: 60px
+		p
+			font-size: 16px
+			line-height: 1.5
+			color: #c9c9c9
+			a
+				color: $cyan
+		.slick-slider
+			background-color: $white
+			margin-bottom: 120px
+			margin-top: 90px
 		.review
 			&__item
 				padding: 40px 10px
 				outline: none
+				border-radius: 10px
+				box-shadow: 0px 0px 3px $btn-gray
 				&:active, &:focus
 					outline: none
 				p
@@ -82,17 +95,32 @@ body.is-open
 					line-height: 1.55
 				.company
 					margin: 20px auto 40px
-					color: $btn-gray
+					color: #c9c9c9
 					font-size: 16px
 					+font-family($roboto-reg)
 			&__title
 				font-size: 40px
 				+font-family($roboto-light)
 				margin: 0 auto
+			&-title
+				font-size: 36px
+				+font-family($roboto-light)
+				margin: 0 auto 45px
+				color: $text
+	&-preview
+		margin-top: 65px
+		.preview
+			&__item
+				display: inline-block
+				vertical-align: top
+		.slick-dots
+			bottom: 0
+		// .slick-dots li button
+		// .slick-dots li.slick-active button
+
 
 .service
 	background-image: url("../img/shape-bg.png")
-	background-color: rgba($cyan, .6)
 	padding-bottom: 80px
 	padding-top: 100px
 	+cover
@@ -111,6 +139,8 @@ body.is-open
 .preview
 	background-color: $main-bg
 	background: $main-bg
+	padding-top: 100px
+	padding-bottom: 60px
 	&__desc
 		position: absolute
 		top: 225px
@@ -127,6 +157,29 @@ body.is-open
 			color: rgba($white, .5)
 			line-height: $md-lh //1.5
 			margin-bottom: 85px
+	&__item
+		outline: none
+		&:focus
+			outline: none
+		p
+			color: #cecece
+			margin-bottom: 0
+			font-size: 16px
+			line-height: 1.65
+	&__title
+		margin: 0 auto 20px
+		font-size: 30px
+		color: $text
+		+font-family($roboto-md)
+	.slick
+		&-next,
+		&-prev
+			z-index: 12
+			top: 40%
+		&-next
+			right: -160px
+		&-prev
+			left: -160px
 
 // partners
 .partners
@@ -170,3 +223,53 @@ body.is-open
 			transform: translate(-50%, -50%)
 	p
 		margin-bottom: 45px
+
+
+
+
+.list
+	&-circle-icons
+		list-style-type: none
+		padding: 0
+		font-size: 0
+		margin-bottom: 50px
+	&-circle-icons li
+		display: inline-block
+		width: 20%
+		padding: 0 20px
+		vertical-align: top
+	&-circle-icons li .images
+		margin: 0 auto
+		position: relative
+		width: 100px
+		height: 100px
+		display: block
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border: 5px dashed rgba($black, .2)
+			border-radius: 50px
+	&-circle-icons li .images svg,
+	&-circle-icons li .images i,
+	&-circle-icons li .images img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+
+.circle-title
+	font-size: 18px
+	color: $white
+	+font-family($roboto-bld)
+	line-height: 1
+	margin: 20px auto 15px
+p.desc
+	color: #0e6f70
+	font-size: 13px
+	line-height: 1.23

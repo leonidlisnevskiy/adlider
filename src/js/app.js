@@ -28,21 +28,7 @@ $(document).ready(function() {
 		}
 	});
 
-	var $sliderPreview = $(".js-slider-preview");
 	var $sliderReview = $(".js-slider-review");
-
-	$sliderPreview.slick({
-		slidesToShow: 1,
-		responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				dots: true
-			}
-		}
-		]
-	});
-
 
 	$sliderReview.slick({
 		slidesToShow: 1,
