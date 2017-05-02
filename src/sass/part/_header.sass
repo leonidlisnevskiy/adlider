@@ -1,6 +1,12 @@
 // header
 .header
 	position: relative
+	+r(992)
+		height: 680px
+	+r(568)
+		height: 540px
+	+r(480)
+		height: 490px
 	// navbar
 	&:before
 		content: ''
@@ -15,16 +21,29 @@
 		height: 100%
 	.navbar
 		border: none
+		&-toggle
+			+r(568)
+				border: none
+				background-color: $cyan
+			.icon-bar
+				+r(568)
+					background-color: $white !important
 		&-default
 			padding-top: 40px
 			background-color: transparent
 			will-change: transition, background-color, padding-top
 			transition: background-color .24s linear, padding-top .22s ease
+			+r(768)
+				padding-top: 0
 			&.affix-top
 				background-color: transparent
 			&.affix
 				background-color: $white
 				padding-top: 20px
+				+r(768)
+					padding-top: 0
+				+r(480)
+					background-color: transparent
 				svg #adlider00,
 				svg #adlider02
 					fill: $black
@@ -40,6 +59,14 @@
 					color: $cyan
 		&-right
 			+clr
+		.navbar-nav.navbar-right
+			margin-top: 0
+			+r(768)
+				margin-top: 8px
+			+r(568)
+				li
+					margin-right: 0
+					display: block
 		&-right li img
 			display: inline-block
 			vertical-align: middle
@@ -50,10 +77,18 @@
 			margin-top: 3px
 		&-brand
 			padding: 0
+			+r(768)
+				display: none
 		&-nav
 			margin-top: 8px
 		&-nav li
 			margin-right: 25px
+			+r(1166)
+				margin-right: 15px
+			+r(769)
+				display: inline-block
+			+r(480)
+				display: block
 		&-nav li:last-child
 			margin-right: 0
 		&-nav li a

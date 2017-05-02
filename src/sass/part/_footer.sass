@@ -2,23 +2,127 @@
 	background-color: $dark-bg
 	padding-top: 40px
 	padding-bottom: 60px
+	+r(992)
+		text-align: center
+	+r(568)
+		padding: 30px 0px
+	+r(480)
+		padding: 20px 0
+	+r(320)
+		padding: 10px 0
+	ul
+		margin-bottom: 0
+		padding: 0
+	a
+		display: block
+	ul.text-white
+		margin-bottom: 25px
+		display: inline-block
+		vertical-align: top
+		+r(1024)
+			margin: 0 auto 10px
+		+r(768)
+			margin: 10px 0
+		li
+			padding: 0
+	ul.text-gray li:last-child:after
+		display: none
+	ul.text-gray li
+		position: relative
+		&:after
+			content: "/"
+			display: block
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			+r(668)
+				display: none
+	ul.text-gray li a
+		color: rgba($white, 0.4)
+		+r(768)
+			display: inline-block
+		&:hover
+			color: rgba($white, 0.8)
 	ul li
 		display: inline-block
 		color: rgba($white, 0.4)
 		vertical-align: top
-		padding-left: 15px
+		padding-right: 15px
 		margin-right: 10px
+		+r(668)
+			display: block
+			padding: 0
+			margin-right: 0
+		+r(480)
+			margin-right: 4px
 		&:last-child
 			margin-right: 0
+			padding-left: 0
 	ul li a
 		font-size: 14px
+		display: initial
+		+r(668)
+			font-size: 22px
+			display: block
+		+r(480)
+			font-size: 14px
 	ul.text-white li a
 		color: $white
 		&:hover
 			color: $cyan
-	ul.text-gray li a
-		color: rgba($white, 0.4)
-		&:hover
-			color: rgba($white, 0.8)
+	.list-social
+		padding: 0
+		font-size: 0
+		+r(992)
+			text-align: center
+		li
+			padding: 0
+			+r(768)
+				display: inline-block
+	&__social
+		p
+			font-size: 14px
+			color: $white
+			+r(992)
+				margin-top: 10px
+				text-align: center
+		ul
+			text-align: right
+		ul li:last-child
+			margin-right: 0
+		ul li
+			margin-right: 10px
+			text-align: center
+			+r(724)
+				margin-right: 4px
+		ul li a
+			display: block
+			width: 30px
+			height: 30px
+			cursor: pointer
+			border-radius: 50px
+			position: relative
+			background-color: rgba($white, .40)
+			+r(1166)
+				width: 20px
+				height: 20px
+			&:hover
+				background-color: darken(rgba($white, .40), 40)
+				i
+					color: $cyan
+		ul li a i
+			position: absolute
+			top: 50%
+			left: 50%
+			color: transparent
+			transform: translate(-50%, -50%)
+			color: $dark-bg
+			transition: all .24s ease-in-out
+			+r(668)
+				font-size: 14px
+
+
+
 a:hover svg #adliderFooter00
 	fill: $cyan
