@@ -166,6 +166,7 @@ body .slider-review .slick-dots li.slick-active button, body .slider-preview .sl
 .slider-review .review-title { font-size: 36px; font-family: "roboto-light", Arial, sans-serif; margin: 0 auto 45px; color: #071a26; }
 .slider-preview { margin-top: 65px; }
 .slider-preview .preview__item { display: inline-block; vertical-align: top; }
+.slider-preview .preview__item .image { display: inline-block; vertical-align: top; }
 .slider-preview .slick-dots { bottom: 0; }
 
 .service { background-image: url("../img/shape-bg.png"); padding-bottom: 80px; padding-top: 100px; background-position: center center; background-repeat: no-repeat; background-size: cover; }

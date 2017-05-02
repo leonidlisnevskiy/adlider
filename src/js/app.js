@@ -32,7 +32,10 @@ $(document).ready(function() {
 
 	$sliderReview.slick({
 		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		dots: true,
+		fade: true,
 		arrows: true,
 		responsive: [
 		{
