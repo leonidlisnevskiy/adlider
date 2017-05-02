@@ -215,7 +215,7 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
 .popup-container input:active { outline: none; }
 .popup-container input[type=checkbox] { float: left; margin-right: 5px; width: initial; }
 .popup-container .modal-content { box-shadow: none; border: none; }
-.popup-container .modal-title { text-align: center; font-family: "roboto-bold", Arial, sans-serif; color: #071a26; font-size: 16px; line-height: 1.75; }
+.popup-container .modal-title { text-align: center; font-family: "roboto-bold", Arial, sans-serif; color: #071a26; font-size: 16px; text-transform: uppercase; line-height: 1.75; }
 .popup-container .modal-header { padding: 20px; }
 .popup-container .modal-body:after { content: ""; display: table; clear: both; }
 .popup-container .modal-body .repair__link { float: right; }
@@ -224,6 +224,10 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
 .popup-container .modal-footer { text-align: center; padding-top: 0; }
 .popup-container .modal-footer .btn { border: none; outline: none; cursor: pointer; width: 100%; max-width: 280px; }
 .popup-container .modal-footer .btn:focus { outline: none; }
+
+.popup-container .nav-tabs { border: none; }
+.popup-container .nav-tabs > li > a { border-radius: 50px; font-size: 14px; text-decoration: none; background-color: #f5f7f9; color: #fff; font-family: "roboto-light", Arial, sans-serif; border: none !important; }
+.popup-container .nav-tabs > li.active > a { background-color: #24dce0; border: none; }
 @media only screen and (max-width: 1166px) {
  .header .navbar-nav li { margin-right: 15px; }
  .footer__social ul li a { width: 20px; height: 20px; }

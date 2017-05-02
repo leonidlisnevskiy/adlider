@@ -355,23 +355,44 @@
 <div class="modal fade popup-container" id="myModal00" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title">вход</h4>
-			</div>
-			<div class="modal-body">
-				<label for="input00">Логин</label>
-				<input id="input00" type="text" placeholder="johndoe">
 
-				<label for="input01">E-mail</label>
-				<input id="input01" type="text" placeholder="Укажите действующий почтовый ящик">
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab00">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+						<h4 class="modal-title">вход</h4>
+					</div>
 
-				<label for="checkbox" class="initial">Запомнить меня<input type="checkbox" id="checkbox"></label>
-				<a href="#" data-toggle="modal" data-target="#repair" class="repair__link">Забыли пароль?</a>
+					<div class="modal-body">
+						<label for="input00">Логин</label>
+						<input id="input00" type="text" placeholder="johndoe">
+						<label for="input01">E-mail</label>
+						<input id="input01" type="text" placeholder="Укажите действующий почтовый ящик">
+						<label for="checkbox" class="initial">Запомнить меня<input type="checkbox" id="checkbox"></label>
+						<a href="#" data-toggle="modal" data-target="#repair" class="repair__link">Забыли пароль?</a>
+					</div>
 
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary btn-rounded">Войти</button>
+					<div class="modal-footer"><button type="button" class="btn btn-primary btn-rounded">Войти</button></div>
+				</div>
+
+				<div class="tab-pane" id="tab01">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+						<h4 class="modal-title">вход</h4>
+					</div>
+
+					<div class="modal-body">
+						<label for="input00">Логин</label>
+						<input id="input00" type="text" placeholder="johndoe">
+						<label for="input01">E-mail</label>
+						<input id="input01" type="text" placeholder="Укажите действующий почтовый ящик">
+						<label for="checkbox" class="initial">Запомнить меня<input type="checkbox" id="checkbox"></label>
+						<a href="#" data-toggle="modal" data-target="#repair" class="repair__link">Забыли пароль?</a>
+					</div>
+
+					<div class="modal-footer"><button type="button" class="btn btn-primary btn-rounded">Войти</button></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -382,9 +403,16 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
 				<h4 class="modal-title">Регистрация</h4>
 			</div>
+
+				<!-- Nav tabs -->
+			<ul class="nav nav-tabs">
+				<li><a href="#tab00" aria-controls="settings" data-toggle="tab">Вебмастер</a></li>
+				<li class="active"><a href="#tab01" data-toggle="tab">Рекламодатель</a></li>
+			</ul>
+
 			<div class="modal-body">
 				<label for="input00">Логин</label>
 				<input id="input00" type="text" placeholder="johndoe">
@@ -413,7 +441,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
 				<h4 class="modal-title">Восстановление пароля</h4>
 			</div>
 			<div class="modal-body">
@@ -421,7 +449,7 @@
 				<input id="repair00" type="email" placeholder="Введите E-mail указанный при регистрации" autofocus="">
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary btn-rounded">Зарегистрироваться</button>
+				<button type="button" class="btn btn-primary btn-rounded">Зарегистрироваться 2</button>
 			</div>
 		</div>
 	</div>
