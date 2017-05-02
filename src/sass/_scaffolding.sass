@@ -4,15 +4,20 @@
 img
 	max-width: 100%
 	height: auto
+
+// Global
+path
+	transition: all .24s ease-in-out
+
 textarea
 	resize: none
 	outline: none
 	overflow: hidden
 	outline-color: transparent
 
-// Global
 a
 	-webkit-transition: all .24s ease-in-out
+
 p
 	color: $text
 	+font-family($roboto-light)
@@ -26,6 +31,7 @@ body.is-open
 			-webkit-transform: translateX(0)
 	.header.header__main .header__main-menu
 		-webkit-transform: translateX(0)
+
 .slick
 	&-prev,
 	&-next
@@ -42,25 +48,33 @@ body.is-open
 			outline: none
 	&-next
 		background-image: url("../img/svgo/arrow-next.svg")
+		right: -160px
+		+r(1166)
+			right: 0
 	&-prev
 		background-image: url("../img/svgo/arrow-prev.svg")
+		left: -160px
+		+r(1166)
+			left: 0
 
 // slick-dots
-.slider
-	&-review, &-preview
-		.slick-dots
-			padding: 0
-			bottom: -60px
-		.slick-dots li button
-			border: none
-			outline: none
-			opacity: 1
-			width: 12px
-			height: 12px
-			box-shadow: 0 0 15px 1px $btn-gray
-		.slick-dots li.slick-active button
-			background-color: #14bec0
-			background: #14bec0
+body
+	.slider
+		&-review,
+		&-preview
+			.slick-dots
+				padding: 0
+				bottom: -60px
+			.slick-dots li button
+				border: none
+				outline: none
+				opacity: 1
+				width: 12px
+				height: 12px
+				box-shadow: 0 0 15px 1px $btn-gray
+			.slick-dots li.slick-active button
+				background-color: #14bec0
+				background: #14bec0
 
 .slider
 	&-item p
@@ -70,6 +84,7 @@ body.is-open
 		background-color: $main-bg
 		padding-top: 100px
 		padding-bottom: 60px
+		border-radius: 20px
 		p
 			font-size: 16px
 			line-height: 1.5
@@ -84,8 +99,6 @@ body.is-open
 			&__item
 				padding: 40px 10px
 				outline: none
-				border-radius: 10px
-				box-shadow: 0px 0px 3px $btn-gray
 				&:active, &:focus
 					outline: none
 				p
@@ -140,11 +153,11 @@ body.is-open
 	background-color: $main-bg
 	background: $main-bg
 	padding-top: 100px
-	padding-bottom: 60px
+	padding-bottom: 120px
 	&__desc
 		position: absolute
 		top: 225px
-		transform: translateX(-50%)
+		-webkit-transform: translateX(-50%)
 		left: 50%
 		z-index: 22
 		width: 100%
@@ -176,10 +189,6 @@ body.is-open
 		&-prev
 			z-index: 12
 			top: 40%
-		&-next
-			right: -160px
-		&-prev
-			left: -160px
 
 // partners
 .partners
@@ -193,6 +202,7 @@ body.is-open
 		text-align: center
 		width: 100%
 		padding: 0
+		font-size: 0
 		margin: 0
 		position: relative
 		&:after
@@ -201,6 +211,8 @@ body.is-open
 			position: absolute
 			width: 100%
 			bottom: 0
+			will-change: height, transition
+			transition: height .34s ease-in-out
 			left: 0
 			height: 100px
 			background: -webkit-linear-gradient(top,transparent 0%,#e9edf1 80%)
@@ -208,6 +220,8 @@ body.is-open
 			display: inline-block
 			margin: 0 10px 20px 0
 			width: 30%
+			+nosel
+			cursor: default
 		li .images
 			position: relative
 			width: 160px
@@ -216,13 +230,19 @@ body.is-open
 			box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.40)
 			background-color: $white
 			display: inline-block
+			will-change: box-shadow, transition
+			transition: box-shadow .24s linear
+			&:hover
+				box-shadow: none
 		li .images i, img
 			position: absolute
 			top: 50%
 			left: 50%
-			transform: translate(-50%, -50%)
+			-webkit-transform: translate(-50%, -50%)
 	p
 		margin-bottom: 45px
+	.list-logos:hover:after
+		height: 0
 
 
 
@@ -232,6 +252,7 @@ body.is-open
 		list-style-type: none
 		padding: 0
 		font-size: 0
+		display: table
 		margin-bottom: 50px
 	&-circle-icons li
 		display: inline-block
@@ -260,7 +281,7 @@ body.is-open
 		position: absolute
 		top: 50%
 		left: 50%
-		transform: translate(-50%, -50%)
+		-webkit-transform: translate(-50%, -50%)
 
 
 .circle-title

@@ -1,0 +1,72 @@
+@media (min-width: 768px)
+	.popup-container
+		.modal
+			&-dialog
+				width: 410px
+
+
+.popup-container
+	+clr
+	label
+		display: block
+		color: $text
+		font-size: 14px
+		+font-family($roboto-md)
+		&.initial
+			width: initial
+			display: inline-block
+	input
+		border-color: #dbdbdb
+		border-radius: 2px
+		border-width: 1px
+		border-style: solid
+		width: 100%
+		transition: all .24s ease-in-out
+		outline: none
+		font-size: 14px
+		line-height: 1.71
+		+font-family($roboto-reg)
+		padding: 12px
+		margin-bottom: 15px
+		+placeholder(#dbdbdb)
+		&:focus
+			+placeholder(darken(#dbdbdb, 10))
+			outline: none !important
+		&:active
+			outline: none
+	input[type=checkbox]
+		float: left
+		margin-right: 5px
+		width: initial
+	.modal
+		&-content
+			box-shadow: none
+			border: none
+		&-title
+			text-align: center
+			+font-family($roboto-bld)
+			color: $text
+			font-size: 16px
+			line-height: 1.75
+		&-header
+			padding: 20px
+		&-body
+			+clr
+			.repair__link
+				float: right
+		&-body, &-footer, &-header
+			border: none
+		&-body,
+		&-footer
+			padding: 30px
+		&-footer
+			text-align: center
+			padding-top: 0
+		&-footer .btn
+			border: none
+			outline: none
+			cursor: pointer
+			width: 100%
+			max-width: 280px
+			&:focus
+				outline: none
