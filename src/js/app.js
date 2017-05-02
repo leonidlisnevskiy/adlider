@@ -33,11 +33,18 @@ $(document).ready(function() {
 	$sliderReview.slick({
 		slidesToShow: 1,
 		dots: true,
-		arrow: true,
+		arrows: true,
 		responsive: [
 		{
 			breakpoint: 768,
 			settings: {
+				dots: true
+			}
+		},
+		{
+			breakpoint: 568,
+			settings: {
+				arrows: false,
 				dots: true
 			}
 		}

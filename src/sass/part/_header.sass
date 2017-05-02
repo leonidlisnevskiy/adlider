@@ -7,6 +7,8 @@
 		height: 540px
 	+r(480)
 		height: 490px
+	+r(367)
+		height: 420px
 	// navbar
 	&:before
 		content: ''
@@ -22,6 +24,8 @@
 	.navbar
 		border: none
 		&-toggle
+			+r(768)
+				margin-right: 0
 			+r(568)
 				border: none
 				background-color: $cyan
@@ -42,8 +46,6 @@
 				padding-top: 20px
 				+r(768)
 					padding-top: 0
-				+r(480)
-					background-color: transparent
 				svg #adlider00,
 				svg #adlider02
 					fill: $black

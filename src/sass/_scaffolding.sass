@@ -46,16 +46,30 @@ body.is-open
 		border-radius: 50px
 		&:focus
 			outline: none
+		+r(480)
+			display: none
 	&-next
 		background-image: url("../img/svgo/arrow-next.svg")
 		right: -160px
 		+r(1166)
 			right: 0
+		+r(1025)
+			right: -60px
+		+r(992)
+			right: 0
+		+r(568)
+			display: none
 	&-prev
 		background-image: url("../img/svgo/arrow-prev.svg")
 		left: -160px
 		+r(1166)
 			left: 0
+		+r(1025)
+			left: -60px
+		+r(992)
+			left: 0
+		+r(568)
+			display: none
 
 // slick-dots
 body
@@ -65,6 +79,8 @@ body
 			.slick-dots
 				padding: 0
 				bottom: -60px
+				+r(768)
+					bottom: 0
 			.slick-dots li button
 				border: none
 				outline: none
@@ -72,9 +88,14 @@ body
 				width: 12px
 				height: 12px
 				box-shadow: 0 0 15px 1px $btn-gray
+				+r(768)
+					background: $cyan
 			.slick-dots li.slick-active button
 				background-color: #14bec0
 				background: #14bec0
+				+r(768)
+					background-color: darken(#14bec0, 10)
+					background: darken(#14bec0, 10)
 
 .slider
 	&-item p
@@ -85,6 +106,16 @@ body
 		padding-top: 100px
 		padding-bottom: 60px
 		border-radius: 20px
+		+r(992)
+			padding: 50px 0
+		+r(768)
+			padding: 40px 0
+		+r(568)
+			padding: 25px 0
+		+r(480)
+			padding: 20px
+		+r(320)
+			padding: 15px 0
 		p
 			font-size: 16px
 			line-height: 1.5
@@ -93,8 +124,16 @@ body
 				color: $cyan
 		.slick-slider
 			background-color: $white
-			margin-bottom: 120px
 			margin-top: 90px
+			margin-bottom: 120px
+			+r(768)
+				margin: 70px auto 90px
+			+r(568)
+				margin: 45px 0
+			+r(480)
+				margin: 30px 0
+			+r(320)
+				margin: 10px 0
 		.review
 			&__item
 				padding: 40px 10px
@@ -111,17 +150,39 @@ body
 					color: #c9c9c9
 					font-size: 16px
 					+font-family($roboto-reg)
+					+r(480)
+						margin: 10px 0
 			&__title
 				font-size: 40px
 				+font-family($roboto-light)
 				margin: 0 auto
+				+r(992)
+					font-size: 38px
+				+r(768)
+					font-size: 34px
+				+r(568)
+					font-size: 32px
+				+r(480)
+					font-size: 28px
+				+r(320)
+					font-size: 24px
 			&-title
 				font-size: 36px
 				+font-family($roboto-light)
 				margin: 0 auto 45px
 				color: $text
+				+r(768)
+					font-size: 32px
+				+r(568)
+					font-size: 28px
+				+r(480)
+					font-size: 24px
+				+r(320)
+					font-size: 22px
 	&-preview
 		margin-top: 65px
+		+r(768)
+			margin-top: 25px
 		.preview
 			&__item
 				display: inline-block
@@ -135,6 +196,12 @@ body
 	padding-bottom: 80px
 	padding-top: 100px
 	+cover
+	+r(768)
+		padding: 60px 0
+	+r(568)
+		padding: 40px 0
+	+r(480)
+		padding: 20px 0
 	+retina
 		background-image: url("../img/shape-bg@2x.png")
 	.btn-white
@@ -147,12 +214,15 @@ body
 		margin: 0 auto 65px
 		+r(768)
 			font-size: 30px
+			margin-bottom: 40px
 		+r(568)
 			font-size: 28px
+			margin-bottom: 30px
 		+r(480)
 			font-size: 24px
 		+r(320)
 			font-size: 22px
+			margin-bottom: 20px
 
 // preview
 .preview
@@ -166,6 +236,11 @@ body
 		padding: 20px 0
 	+r(320)
 		padding: 10px 0
+	h2
+		+r(768)
+			font-size: 26px
+		+r(568)
+			font-size: 22px
 	&__desc
 		position: absolute
 		top: 225px
@@ -224,10 +299,25 @@ body
 .partners
 	background-color: #e9edf1
 	padding: 100px 0 60px 0
+	+r(768)
+		padding: 50px 0
+	+r(568)
+		padding: 30px 0
+	+r(320)
+		padding: 10px 0
 	h3
 		margin: 0 auto 60px
 		font-size: $text-lg //36px
 		line-height: $base-lh
+		+r(768)
+			margin: 0 auto 40px
+			font-size: 32px
+		+r(568)
+			margin: 0 auto 25px
+			font-size: 28px
+		+r(320)
+			margin: 0 auto 15px
+			font-size: 24px
 	.list-logos
 		text-align: center
 		width: 100%
@@ -271,6 +361,8 @@ body
 			display: inline-block
 			will-change: box-shadow, transition
 			transition: box-shadow .24s linear
+			+r(1025)
+				width: 130px
 			&:hover
 				box-shadow: none
 		li .images i, img
@@ -280,6 +372,13 @@ body
 			-webkit-transform: translate(-50%, -50%)
 	p
 		margin-bottom: 45px
+		+r(768)
+			margin-bottom: 30px
+		+r(480)
+			text-align: center
+			margin-bottom: 20px
+		+r(320)
+			margin-bottom: 10px
 	.list-logos:hover:after
 		height: 0
 
@@ -293,6 +392,13 @@ body
 		font-size: 0
 		display: table
 		margin-bottom: 50px
+		+r(568)
+			margin-bottom: 35px
+		+r(480)
+			margin-bottom: 20px
+		+r(320)
+			margin-bottom: 0
+
 	&-circle-icons li
 		display: inline-block
 		width: 20%
@@ -303,12 +409,18 @@ body
 			padding: 0 10px
 		+r(568)
 			width: 100%
+		+r(480)
+			padding: 0
+			margin-bottom: 20px
 	&-circle-icons li .images
 		margin: 0 auto
 		position: relative
 		width: 100px
 		height: 100px
 		display: block
+		+r(480)
+			height: auto
+			width: initial
 		&:before
 			content: ""
 			display: block
@@ -319,6 +431,8 @@ body
 			height: 100%
 			border: 5px dashed rgba($black, .2)
 			border-radius: 50px
+			+r(480)
+				display: none
 	&-circle-icons li .images svg,
 	&-circle-icons li .images i,
 	&-circle-icons li .images img
@@ -326,6 +440,9 @@ body
 		top: 50%
 		left: 50%
 		-webkit-transform: translate(-50%, -50%)
+		+r(480)
+			position: static
+			transform: translate(0px)
 
 
 .circle-title
@@ -334,6 +451,8 @@ body
 	+font-family($roboto-bld)
 	line-height: 1
 	margin: 20px auto 15px
+	+r(480)
+		margin: 0 auto 10px
 p.desc
 	color: #0e6f70
 	font-size: 13px

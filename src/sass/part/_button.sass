@@ -75,6 +75,9 @@
 	&.btn-primary
 		font-size: 16px
 		background-color: $cyan
+		+r(480)
+			padding: 10px 15px
+			font-size: 14px
 		&:hover, &:focus
 			background-color: darken($cyan, 10)
 
@@ -92,6 +95,8 @@
 	display: block
 	will-change: transition, color, border-color
 	transition: all .24s ease-in-out
+	+r(568)
+		display: none
 	&-fixed
 		position: absolute
 		bottom: -120px
