@@ -65,11 +65,12 @@
 
 									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 										<div class="row">
-											<div class="col-md-4 col-xs-12 col-sm-4">
+											<div class="col-md-5 col-xs-12 col-sm-5">
 												<ul class="nav navbar-nav">
-													<li><a href="#">Возможности</a></li>
-													<li><a href="#">Интеграция</a></li>
-													<li><a href="#">Предложения</a></li>
+													<li><a href="#step01" class="js-scroll-to">Главная</a></li>
+													<li><a href="#step01" class="js-scroll-to">Форматы</a></li>
+													<li><a href="#step01" class="js-scroll-to">Преимущества</a></li>
+													<li><a href="#step03" class="js-scroll-to">Контакты</a></li>
 												</ul>
 											</div>
 
@@ -101,15 +102,15 @@
 							<p>Монетизируйте свой трафик с помощью эффективных рекламных форматов</p>
 							<a href="/" class="btn btn-primary btn-rounded">Стать партнером</a>
 
-							<a href="/" class="mouse-fixed"><i class="mouse"></i></a>
 						</div>
 					</div>
 					<!-- END preview__desc -->
 
+					<a href="/" class="mouse-fixed"><i class="mouse"></i></a>
 				</header>
 	<!-- END header -->
 
-	<div class="preview">
+	<div class="preview" id="step01">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -322,11 +323,11 @@
 			</div>
 			<div class="col-md-7">
 				<ul class="text-white">
-					<li><a href="/">Стать партнером</a></li>
 					<li><a href="/">Обратная связь</a></li>
 					<li><a href="/">Предложения</a></li>
 					<li><a href="/">Интеграция</a></li>
 					<li><a href="/">Возможности</a></li>
+					<li class="is-active"><a href="/">Стать партнером</a></li>
 				</ul>
 
 				<ul class="text-gray">
@@ -351,7 +352,7 @@
 </footer>
 <!-- footer END -->
 
-	<!-- Modal -->
+	
 <div class="modal fade popup-container" id="myModal00" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -372,7 +373,6 @@
 						<label for="checkbox" class="initial">Запомнить меня<input type="checkbox" id="checkbox"></label>
 						<a href="#" data-toggle="modal" data-target="#repair" class="repair__link">Забыли пароль?</a>
 					</div>
-
 					<div class="modal-footer"><button type="button" class="btn btn-primary btn-rounded">Войти</button></div>
 				</div>
 
@@ -390,7 +390,6 @@
 						<label for="checkbox" class="initial">Запомнить меня<input type="checkbox" id="checkbox"></label>
 						<a href="#" data-toggle="modal" data-target="#repair" class="repair__link">Забыли пароль?</a>
 					</div>
-
 					<div class="modal-footer"><button type="button" class="btn btn-primary btn-rounded">Войти</button></div>
 				</div>
 			</div>
@@ -407,30 +406,60 @@
 				<h4 class="modal-title">Регистрация</h4>
 			</div>
 
-				<!-- Nav tabs -->
-			<ul class="nav nav-tabs">
-				<li><a href="#tab00" aria-controls="settings" data-toggle="tab">Вебмастер</a></li>
-				<li class="active"><a href="#tab01" data-toggle="tab">Рекламодатель</a></li>
+
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#webmaster" aria-controls="webmaster" role="tab" data-toggle="tab">Вебмастер</a></li>
+				<li role="presentation"><a href="#reklama" aria-controls="reklama" role="tab" data-toggle="tab">Рекламодатель</a></li>
 			</ul>
 
-			<div class="modal-body">
-				<label for="input00">Логин</label>
-				<input id="input00" type="text" placeholder="johndoe">
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="webmaster">
+					<div class="modal-body">
+						<label for="input00">Логин</label>
+						<input id="input00" type="text" placeholder="johndoe">
 
-				<label for="input01">E-mail</label>
-				<input id="input01" type="text" placeholder="Укажите действующий почтовый ящик">
+						<label for="input01">E-mail</label>
+						<input id="input01" type="text" placeholder="Укажите действующий почтовый ящик">
 
-				<label for="input02">Пароль</label>
-				<input id="input02" type="text" placeholder="Пароль должен содержать более 6 символов">
+						<label for="input02">Пароль</label>
+						<input id="input02" type="text" placeholder="Пароль должен содержать более 6 символов">
 
-				<label for="input03">Повторите пароль</label>
-				<input id="input03" type="text" placeholder="Повторите указанный выше пароль">
+						<label for="input03">Повторите пароль</label>
+						<input id="input03" type="text" placeholder="Повторите указанный выше пароль">
 
-				<label for="input04">Skype</label>
-				<input id="input04" type="text" placeholder="Ваш логин в Skype">
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-primary btn-rounded">Зарегистрироваться</button>
+						<label for="input04">Skype</label>
+						<input id="input04" type="text" placeholder="Ваш логин в Skype">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-rounded">Зарегистрироваться</button>
+					</div>
+				</div>
+
+				<div role="tabpanel" class="tab-pane" id="reklama">
+					<div class="modal-body">
+						<label for="input00">Логин 2</label>
+						<input id="input00" type="text" placeholder="johndoe">
+
+						<label for="input01">E-mail</label>
+						<input id="input01" type="text" placeholder="Укажите действующий почтовый ящик">
+
+						<label for="input02">Пароль</label>
+						<input id="input02" type="text" placeholder="Пароль должен содержать более 6 символов">
+
+						<label for="input03">Повторите пароль</label>
+						<input id="input03" type="text" placeholder="Повторите указанный выше пароль">
+
+						<label for="input04">Skype</label>
+						<input id="input04" type="text" placeholder="Ваш логин в Skype">
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-rounded">Зарегистрироваться</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -454,7 +483,6 @@
 		</div>
 	</div>
 </div>
-<!-- END Modal -->
 
 
 	<!-- BEGIN vendor -->

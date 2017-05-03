@@ -105,7 +105,6 @@ body
 		background-color: $main-bg
 		padding-top: 100px
 		padding-bottom: 60px
-		border-radius: 20px
 		+r(992)
 			padding: 50px 0
 		+r(768)
@@ -125,6 +124,8 @@ body
 		.slick-slider
 			background-color: $white
 			margin-top: 90px
+			border-radius: 8px
+			box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.10)
 			margin-bottom: 120px
 			+r(768)
 				margin: 70px auto 90px
@@ -134,9 +135,11 @@ body
 				margin: 30px 0
 			+r(320)
 				margin: 10px 0
+		.btn-rounded
+			box-shadow: none
 		.review
 			&__item
-				padding: 40px 10px
+				padding: 40px 60px
 				outline: none
 				&:active, &:focus
 					outline: none
@@ -210,6 +213,8 @@ body
 	.btn-white
 		background-color: $white
 		color: darken($cyan, 10)
+		background-image: -webkit-linear-gradient( -90deg, rgb(255,255,255) 0%, rgb(230,230,230) 100%)
+		box-shadow: 1.5px 2.598px 7px 0px rgba(0, 0, 0, 0.059)
 	h2
 		color: $white
 		font-size: $text-lg
@@ -240,10 +245,16 @@ body
 	+r(320)
 		padding: 10px 0
 	h2
+		+font-family($roboto-light)
+		position: relative
+		margin: 0 auto 40px
+		left: 22px
 		+r(768)
 			font-size: 26px
 		+r(568)
 			font-size: 22px
+	p
+		color: rgba(#071a26, .50)
 	&__desc
 		position: absolute
 		top: 225px
@@ -251,13 +262,14 @@ body
 		left: 50%
 		z-index: 22
 		width: 100%
+		+r(1367)
+			top: 160px
 		+r(992)
 			top: 90px
 		h1
 			color: $white
 			+font-family($roboto-light)
 			margin: 0 auto 40px
-			letter-spacing: -1.9px
 			+r(768)
 				font-size: 32px
 			+r(568)
@@ -287,7 +299,7 @@ body
 			margin-bottom: 0
 			font-size: 16px
 			line-height: 1.65
-	&__title
+	.preview__title
 		margin: 0 auto 20px
 		font-size: 30px
 		color: $text
@@ -302,6 +314,8 @@ body
 .partners
 	background-color: #e9edf1
 	padding: 100px 0 60px 0
+	.btn
+		box-shadow: none
 	+r(768)
 		padding: 50px 0
 	+r(568)
@@ -359,7 +373,7 @@ body
 			width: 160px
 			height: 90px
 			border-radius: 4px
-			box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.40)
+			box-shadow: 1.5px 2.598px 5px 0px rgba(0, 0, 0, 0.1)
 			background-color: $white
 			display: inline-block
 			will-change: box-shadow, transition
@@ -415,6 +429,17 @@ body
 		+r(480)
 			padding: 0
 			margin-bottom: 20px
+	&-circle-icons li p
+		color: #0e6f70
+		+font-family($roboto-reg)
+		&.circle-title
+			font-size: 18px
+			color: $white
+			+font-family($roboto-bld)
+			line-height: 1
+			margin: 20px auto 15px
+			+r(480)
+				margin: 0 auto 10px
 	&-circle-icons li .images
 		margin: 0 auto
 		position: relative
@@ -432,8 +457,8 @@ body
 			left: 0
 			width: 100%
 			height: 100%
-			border: 5px dashed rgba($black, .2)
-			border-radius: 50px
+			+cover
+			background-image: url("../img/circle-shape.png")
 			+r(480)
 				display: none
 	&-circle-icons li .images svg,
@@ -445,17 +470,8 @@ body
 		-webkit-transform: translate(-50%, -50%)
 		+r(480)
 			position: static
-			transform: translate(0px)
+			-webkit-transform: translate(0px)
 
-
-.circle-title
-	font-size: 18px
-	color: $white
-	+font-family($roboto-bld)
-	line-height: 1
-	margin: 20px auto 15px
-	+r(480)
-		margin: 0 auto 10px
 p.desc
 	color: #0e6f70
 	font-size: 13px

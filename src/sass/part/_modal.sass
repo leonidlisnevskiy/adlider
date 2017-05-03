@@ -15,6 +15,9 @@
 		&.initial
 			width: initial
 			display: inline-block
+			+font-family($roboto-md)
+	.btn
+		box-shadow: none
 	input
 		border-color: #dbdbdb
 		border-radius: 2px
@@ -50,11 +53,13 @@
 			text-transform: uppercase
 			line-height: 1.75
 		&-header
-			padding: 20px
+			padding: 20px 20px 27px 20px
 		&-body
+			padding-top: 0 !important
 			+clr
 			.repair__link
 				float: right
+				color: #14bec0
 		&-body, &-footer, &-header
 			border: none
 		&-body,
@@ -76,6 +81,7 @@
 .popup-container
 	.nav.nav-tabs
 		text-align: center
+		margin-bottom: 20px
 	.nav-tabs
 		border: none
 		background-color: #f5f7f9
@@ -83,6 +89,8 @@
 		margin: 0 auto
 		border-radius: 50px
 		width: 85%
+		> li
+			width: 50%
 		> li > a
 			border-radius: 50px
 			font-size: 14px

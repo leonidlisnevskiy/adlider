@@ -25,6 +25,9 @@
 			margin: 10px 0
 		li
 			padding: 0
+			&.is-active a
+				color: $cyan
+				+font-family($roboto-bld)
 	ul.text-gray li:last-child:after
 		display: none
 	ul.text-gray li
@@ -35,7 +38,7 @@
 			position: absolute
 			top: 50%
 			right: 0
-			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
 			+r(668)
 				display: none
 	ul.text-gray li a
@@ -116,7 +119,7 @@
 			top: 50%
 			left: 50%
 			color: transparent
-			transform: translate(-50%, -50%)
+			-webkit-transform: translate(-50%, -50%)
 			color: $dark-bg
 			transition: all .24s ease-in-out
 			+r(668)

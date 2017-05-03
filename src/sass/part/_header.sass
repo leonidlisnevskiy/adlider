@@ -1,6 +1,8 @@
 // header
 .header
 	position: relative
+	+r(1367)
+		height: 650px
 	+r(992)
 		height: 680px
 	+r(568)
@@ -30,7 +32,7 @@
 		width: 100%
 		z-index: 12
 		pointer-events: none
-		background-color: rgba($black, .4)
+		background-color: rgba($black, .75)
 		height: 100%
 	&__logo
 		position: absolute
@@ -61,6 +63,7 @@
 			&.affix
 				background-color: $white
 				padding-top: 20px
+				box-shadow: 1.5px 2.598px 7px 0px rgba(0, 0, 0, 0.059)
 				+r(768)
 					padding-top: 0
 				svg #adlider00,
