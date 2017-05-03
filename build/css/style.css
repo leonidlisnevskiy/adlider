@@ -239,9 +239,9 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
 .popup-container .modal-footer .btn:focus { outline: none; }
 
 .popup-container .nav.nav-tabs { text-align: center; }
-.popup-container .nav-tabs { border: none; }
-.popup-container .nav-tabs > li > a { border-radius: 50px; font-size: 14px; text-decoration: none; background-color: #f5f7f9; color: #fff; font-family: "roboto-light", Arial, sans-serif; border: none !important; }
-.popup-container .nav-tabs > li.active > a { background-color: #24dce0; border: none; }
+.popup-container .nav-tabs { border: none; background-color: #f5f7f9; padding: 5px; margin: 0 auto; border-radius: 50px; width: 85%; }
+.popup-container .nav-tabs > li > a { border-radius: 50px; font-size: 14px; text-decoration: none; background-color: #f5f7f9; color: #000; background-color: transparent; font-family: "roboto-light", Arial, sans-serif; border: none !important; padding: 3px 15px; }
+.popup-container .nav-tabs > li.active > a { background-color: #24dce0; color: #fff; border: none; }
 @media only screen and (max-width: 1166px) {
  .header .navbar-nav li { margin-right: 15px; }
  .footer__social ul li a { width: 20px; height: 20px; }
