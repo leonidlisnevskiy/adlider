@@ -273,8 +273,6 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .user__info { text-align: center; } }
 @media only screen and (max-width: 769px) {
  .header .navbar-nav li { display: inline-block; } }
-@media (min-width: 768px) {
- .popup-container .modal-dialog { width: 410px; } }
 @media only screen and (max-width: 768px) {
  .header__logo { top: 10px; }
  .header .navbar-toggle { margin-right: 0; }
@@ -304,6 +302,10 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .partners .list-logos { height: 320px; overflow: hidden; margin-bottom: 20px; }
  .partners .list-logos li { width: 50%; margin: 0 auto 20px; }
  .partners p { margin-bottom: 30px; } }
+@media (min-width: 768px) {
+ .popup-container .modal-dialog { width: 410px; } }
+@media only screen and (max-width: 736px) {
+ .header.header__common .navbar-collapse { padding-top: 10px; } }
 @media only screen and (max-width: 724px) {
  .footer__social ul li { margin-right: 4px; } }
 @media only screen and (max-width: 668px) {
@@ -356,7 +358,9 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .list-circle-icons li .images { height: auto; width: initial; }
  .list-circle-icons li .images:before { display: none; }
  .list-circle-icons li .images svg, .list-circle-icons li .images i, .list-circle-icons li .images img { position: static; -ms-transform: translate(0px); transform: translate(0px); }
- .circle-title { margin: 0 auto 10px; } }
+ .circle-title { margin: 0 auto 10px; }
+ .user__info { text-align: left; }
+ .user__info li { width: 100%; margin-left: 0; margin-bottom: 20px; font-size: 20px; } }
 @media only screen and (max-width: 367px) {
  .header { height: 420px; } }
 @media only screen and (max-width: 320px) {
@@ -372,8 +376,6 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .partners { padding: 10px 0; }
  .partners h3 { margin: 0 auto 15px; font-size: 24px; }
  .partners p { margin-bottom: 10px; }
- .list-circle-icons { margin-bottom: 0; }
- .user__info { text-align: left; }
- .user__info li { width: 100%; margin-left: 0; margin-bottom: 20px; font-size: 20px; } }
+ .list-circle-icons { margin-bottom: 0; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
  .service { background-image: url("../img/shape-bg@2x.png"); } }
