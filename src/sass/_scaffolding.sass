@@ -13,7 +13,7 @@ a, input, button
 		outline-color: transparent
 // Global
 path
-	transition: all .24s ease-in-out
+	-webkit-transition: all .24s ease-in-out
 
 textarea
 	resize: none
@@ -87,6 +87,8 @@ body
 				bottom: -60px
 				+r(768)
 					bottom: 0
+				+r(480)
+					position: static
 			.slick-dots li button
 				border: none
 				outline: none
@@ -372,7 +374,7 @@ body
 			width: 100%
 			bottom: 0
 			will-change: height, transition
-			transition: height .34s ease-in-out
+			-webkit-transition: height .34s ease-in-out
 			left: 0
 			height: 100px
 			background: -webkit-linear-gradient(top,transparent 0%,#e9edf1 80%)
@@ -396,7 +398,7 @@ body
 			background-color: $white
 			display: inline-block
 			will-change: box-shadow, transition
-			transition: box-shadow .24s linear
+			-webkit-transition: box-shadow .24s linear
 			+r(1025)
 				width: 130px
 			&:hover

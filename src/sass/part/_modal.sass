@@ -17,11 +17,25 @@
 		margin: 0 auto
 		label
 			padding: 0
-			margin: 0 auto
-		label input
+			margin-left: 10px
+		input[type=checkbox]
 			padding: 0
-			position: static
+			position: relative
 			margin-left: 0
+			&:checked:after
+				background-color: #f00
+			&:after
+				content: ""
+				display: block
+				will-change: transition, color, background-color
+				-webkit-transition: all .21s ease-in-out
+				position: absolute
+				width: 20px
+				top: 50%
+				left: 0
+				-webkit-transform: translateY(-50%)
+				height: 20px
+				background-color: #ff0
 	label
 		display: block
 		color: $text
@@ -39,7 +53,7 @@
 		border-width: 1px
 		border-style: solid
 		width: 100%
-		transition: all .24s ease-in-out
+		-webkit-transition: all .24s ease-in-out
 		outline: none
 		font-size: 14px
 		line-height: 1.71

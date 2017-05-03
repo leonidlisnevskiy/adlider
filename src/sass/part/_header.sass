@@ -40,6 +40,14 @@
 		z-index: 100
 		+r(768)
 			top: 10px
+	.navbar-fixed-top .navbar-collapse,
+	.navbar-fixed-bottom .navbar-collapse
+		max-height: initial
+	.navbar-collapse.in
+		overflow-y: initial
+	.navbar-collapse
+		+r(768)
+			padding-top: 10px
 	.navbar
 		border: none
 		&-toggle
@@ -49,18 +57,19 @@
 				border: none
 				background-color: $cyan
 			.icon-bar
-				+r(568)
+				+r(768)
 					background-color: $white !important
 		&-default
 			padding-top: 40px
 			background-color: transparent
 			will-change: transition, background-color, padding-top
-			transition: background-color .24s linear, padding-top .22s ease
+			-webkit-transition: background-color .24s linear, padding-top .22s ease
 			padding-bottom: 20px
 			+r(768)
 				padding-top: 0
 			&.affix-top
-				background-color: transparent
+				+r(768)
+					background-color: darken($cyan, 20)
 			&.affix
 				background-color: $white
 				padding-top: 20px
@@ -72,7 +81,7 @@
 					fill: $black
 				svg path
 					will-change: transition, fill
-					transition: fill .24s ease
+					-webkit-transition: fill .24s ease
 				.navbar-nav > li > a
 					color: $black
 				.user__info li a,
@@ -102,6 +111,7 @@
 				li
 					margin-right: 0
 					display: block
+					text-align: right
 		&-right li img
 			display: inline-block
 			vertical-align: middle
@@ -123,6 +133,8 @@
 				text-align: center
 				margin-bottom: 15px
 				margin-top: 0
+			+r(769)
+				margin-bottom: 0
 		&-nav li
 			margin-right: 25px
 			+r(1166)
@@ -138,7 +150,7 @@
 			padding: 0
 			font-size: $text-sm //14px
 			+font-family($roboto-light)
-			transition: all .24s ease-in-out
+			-webkit-transition: all .24s ease-in-out
 
 // video
 .promo

@@ -98,7 +98,7 @@
 	position: relative
 	display: block
 	will-change: transition, color, border-color
-	transition: all .24s ease-in-out
+	-webkit-transition: all .24s ease-in-out
 	+r(568)
 		display: none
 	&-fixed
@@ -106,7 +106,7 @@
 		bottom: 60px
 		z-index: 13
 		left: 50%
-		transform: translateX(-50%)
+		-webkit-transform: translateX(-50%)
 		text-decoration: none
 	&:hover
 		border-color: $white
@@ -123,4 +123,4 @@
 	width: 4px
 	border-radius: 3px
 	height: 8px
-	transition: all .24s linear
+	-webkit-transition: all .24s linear
