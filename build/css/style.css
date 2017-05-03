@@ -231,8 +231,9 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
 .popup-container .checkbox { display: inline-block; vertical-align: top; width: initial; padding-top: 0 !important; margin: 0 auto; }
 .popup-container .checkbox label { padding: 0; margin-left: 10px; }
 .popup-container .checkbox input[type=checkbox] { padding: 0; position: relative; margin-left: 0; }
-.popup-container .checkbox input[type=checkbox]:checked:after { background-color: #f00; }
-.popup-container .checkbox input[type=checkbox]:after { content: ""; display: block; will-change: transition, color, background-color; -webkit-transition: all 0.21s ease-in-out; position: absolute; width: 20px; top: 50%; left: 0; -webkit-transform: translateY(-50%); height: 20px; background-color: #ff0; }
+.popup-container .checkbox input[type=checkbox]:checked:before { -webkit-transform: translate(0px, 3px); opacity: 1; }
+.popup-container .checkbox input[type=checkbox]:after { content: ""; display: block; will-change: transition, color, background-color; -webkit-transition: all 0.21s ease-in-out; position: absolute; width: 20px; top: 50%; left: 0; -webkit-transform: translateY(-50%); height: 20px; background-color: #24dce0; border-radius: 4px; }
+.popup-container .checkbox input[type=checkbox]:before { display: block; background-image: url("../img/icon-done.png"); background-size: cover; width: 10px; -webkit-transition: transform 0.28s ease-in-out, opacity 0.21s linear; opacity: 0; -webkit-transform: translate(0px, -5px); z-index: 11; content: ""; left: 5px; position: absolute; top: 0; height: 8px; background-position: center center; }
 .popup-container label { display: block; color: #071a26; font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; }
 .popup-container label.initial { width: initial; display: inline-block; font-family: "roboto-medium", Arial, sans-serif; }
 .popup-container .btn { box-shadow: none; }

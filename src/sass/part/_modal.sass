@@ -4,7 +4,6 @@
 			&-dialog
 				width: 410px
 
-
 .popup-container
 	+clr
 	.margin-zero
@@ -22,8 +21,9 @@
 			padding: 0
 			position: relative
 			margin-left: 0
-			&:checked:after
-				background-color: #f00
+			&:checked:before
+				-webkit-transform: translate(0px, 3px)
+				opacity: 1
 			&:after
 				content: ""
 				display: block
@@ -35,7 +35,23 @@
 				left: 0
 				-webkit-transform: translateY(-50%)
 				height: 20px
-				background-color: #ff0
+				background-color: $cyan
+				border-radius: 4px
+			&:before
+				display: block
+				background-image: url("../img/icon-done.png")
+				background-size: cover
+				width: 10px
+				-webkit-transition: transform .28s ease-in-out, opacity .21s linear
+				opacity: 0
+				-webkit-transform: translate(0px, -5px)
+				z-index: 11
+				content: ""
+				left: 5px
+				position: absolute
+				top: 0
+				height: 8px
+				background-position: center center
 	label
 		display: block
 		color: $text
