@@ -10,6 +10,14 @@
 	+r(367)
 		height: 420px
 	// navbar
+	&.header__common
+		padding-bottom: 0
+		+r(992)
+			text-align: center
+		.navbar-brand
+			display: inline-block
+			+r(992)
+				margin-top: 10px
 	&:before
 		content: ''
 		display: block
@@ -21,6 +29,11 @@
 		pointer-events: none
 		background-color: rgba($black, .4)
 		height: 100%
+	&__logo
+		position: absolute
+		-webkit-transform: translateX(50%)
+		+r(768)
+			top: 10px
 	.navbar
 		border: none
 		&-toggle
@@ -37,6 +50,7 @@
 			background-color: transparent
 			will-change: transition, background-color, padding-top
 			transition: background-color .24s linear, padding-top .22s ease
+			padding-bottom: 20px
 			+r(768)
 				padding-top: 0
 			&.affix-top
@@ -54,6 +68,14 @@
 					transition: fill .24s ease
 				.navbar-nav > li > a
 					color: $black
+				.user__info li a,
+				.user__info li *
+					color: $black
+				svg #bell,
+				svg #fire
+					fill: $cyan
+				li i.fa
+					color: $cyan
 			.navbar-nav > li > a
 				color: $white
 				line-height: 1
@@ -65,6 +87,10 @@
 			margin-top: 0
 			+r(768)
 				margin-top: 8px
+				float: none
+				display: inline-block
+				width: 100%
+				text-align: center
 			+r(568)
 				li
 					margin-right: 0
@@ -79,18 +105,23 @@
 			margin-top: 3px
 		&-brand
 			padding: 0
-			+r(768)
-				display: none
+			+r(992)
+				float: none
 		&-nav
 			margin-top: 8px
+			+r(992)
+				text-align: center
+				margin-bottom: 15px
+				margin-top: 0
 		&-nav li
 			margin-right: 25px
 			+r(1166)
 				margin-right: 15px
+			+r(992)
+				float: none
+				display: inline-block
 			+r(769)
 				display: inline-block
-			+r(480)
-				display: block
 		&-nav li:last-child
 			margin-right: 0
 		&-nav li a
