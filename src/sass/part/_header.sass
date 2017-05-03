@@ -37,6 +37,7 @@
 	&__logo
 		position: absolute
 		-webkit-transform: translateX(50%)
+		z-index: 100
 		+r(768)
 			top: 10px
 	.navbar
@@ -110,6 +111,9 @@
 			vertical-align: middle
 			margin-top: 3px
 		&-brand
+			z-index: 100
+			position: relative
+			min-height: initial
 			padding: 0
 			+r(992)
 				float: none

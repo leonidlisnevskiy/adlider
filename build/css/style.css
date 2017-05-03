@@ -48,7 +48,7 @@
 .header.header__common { padding-bottom: 0; }
 .header.header__common .navbar-brand { display: inline-block; }
 .header:before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; z-index: 12; pointer-events: none; background-color: rgba(0, 0, 0, 0.75); height: 100%; }
-.header__logo { position: absolute; -webkit-transform: translateX(50%); }
+.header__logo { position: absolute; -webkit-transform: translateX(50%); z-index: 100; }
 .header .navbar { border: none; }
 .header .navbar-default { padding-top: 40px; background-color: transparent; will-change: transition, background-color, padding-top; transition: background-color 0.24s linear, padding-top 0.22s ease; padding-bottom: 20px; }
 .header .navbar-default.affix-top { background-color: transparent; }
@@ -65,7 +65,7 @@
 .header .navbar .navbar-nav.navbar-right { margin-top: 0; }
 .header .navbar-right li img { display: inline-block; vertical-align: middle; margin-right: 2px; }
 .header .navbar-right li a { display: inline-block; vertical-align: middle; margin-top: 3px; }
-.header .navbar-brand { padding: 0; }
+.header .navbar-brand { z-index: 100; position: relative; min-height: initial; padding: 0; }
 .header .navbar-nav { margin-top: 8px; }
 .header .navbar-nav li { margin-right: 25px; }
 .header .navbar-nav li:last-child { margin-right: 0; }
@@ -176,6 +176,7 @@ body .slider-review .slick-dots li.slick-active button, body .slider-preview .sl
 .slider-preview { margin-top: 65px; }
 .slider-preview .preview__item { display: inline-block; vertical-align: top; }
 .slider-preview .preview__item .image { display: inline-block; vertical-align: top; }
+.slider-preview .preview__item p { cursor: default; }
 .slider-preview .slick-dots { bottom: 0; }
 
 .service { background-image: url("../img/shape-bg.png"); padding-bottom: 80px; padding-top: 100px; background-position: center center; background-repeat: no-repeat; background-size: cover; }
@@ -223,6 +224,7 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
 .user__info li svg, .user__info li i { margin-right: 5px; }
 .user__info li i.fa { color: #fff; font-size: 14px; }
 .popup-container:after { content: ""; display: table; clear: both; }
+.popup-container .checkbox { display: inline-block; vertical-align: top; }
 .popup-container label { display: block; color: #071a26; font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; }
 .popup-container label.initial { width: initial; display: inline-block; font-family: "roboto-medium", Arial, sans-serif; }
 .popup-container .btn { box-shadow: none; }
