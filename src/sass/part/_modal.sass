@@ -7,9 +7,21 @@
 
 .popup-container
 	+clr
+	.margin-zero
+		margin: 0
 	.checkbox
 		display: inline-block
 		vertical-align: top
+		width: initial
+		padding-top: 0 !important
+		margin: 0 auto
+		label
+			padding: 0
+			margin: 0 auto
+		label input
+			padding: 0
+			position: static
+			margin-left: 0
 	label
 		display: block
 		color: $text
@@ -33,7 +45,7 @@
 		line-height: 1.71
 		+font-family($roboto-reg)
 		padding: 12px
-		margin-bottom: 15px
+		// margin-bottom: 15px
 		+placeholder(#dbdbdb)
 		&:focus
 			+placeholder(darken(#dbdbdb, 10))
@@ -82,6 +94,13 @@
 
 // tabs
 .popup-container
+	.nav > li > a:hover,
+	.nav > li > a:focus,
+	.nav-tabs > li.active > a,
+	.nav-tabs > li.active > a:hover,
+	.nav-tabs > li.active > a:focus
+		background-image: -webkit-linear-gradient( 180deg, rgb(36,222,224) 0%, rgb(36,200,224) 100%)
+		background-image: linear-gradient( 180deg, rgb(36,222,224) 0%, rgb(36,200,224) 100%)
 	.nav.nav-tabs
 		text-align: center
 		margin-bottom: 20px
@@ -101,10 +120,11 @@
 			background-color: #f5f7f9
 			color: $black
 			background-color: transparent
-			+font-family($roboto-light)
+			+font-family($roboto-md)
+			letter-spacing: normal
 			border: none !important
 			padding: 3px 15px
 		> li.active > a
 			background-color: $cyan
-			color: $white
+			color: $white !important
 			border: none

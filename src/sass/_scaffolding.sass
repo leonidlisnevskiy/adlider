@@ -5,6 +5,12 @@ img
 	max-width: 100%
 	height: auto
 
+a, input, button
+	outline: none
+	outline-offset: none
+	&:focus
+		outline: none !important
+		outline-color: transparent
 // Global
 path
 	transition: all .24s ease-in-out
@@ -158,6 +164,7 @@ body
 					color: $text
 					font-size: 18px
 					line-height: 1.55
+					cursor: default
 				.company
 					margin: 20px auto 40px
 					color: #c9c9c9
@@ -258,9 +265,7 @@ body
 		padding: 10px 0
 	h2
 		+font-family($roboto-light)
-		position: relative
 		margin: 0 auto 40px
-		left: 22px
 		+r(768)
 			font-size: 26px
 		+r(568)
@@ -316,6 +321,8 @@ body
 		font-size: 30px
 		color: $text
 		+font-family($roboto-md)
+		position: relative
+		left: 22px
 	.slick
 		&-next,
 		&-prev
