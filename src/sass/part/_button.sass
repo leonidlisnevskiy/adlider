@@ -24,7 +24,6 @@
 		+nosel
 		height: 50px
 		will-change: transform, transition, box-shadow
-		border-radius: 50px
 		-webkit-transition: transform .3s ease, box-shadow .25s linear, background-color .2s ease-in-out, top .2s ease-in-out
 		-webkit-transform: translateX(0)
 		box-shadow: 0 1px 5px 0 #6b6b6a
@@ -61,12 +60,11 @@
 			&:after
 				top: 16px
 	&.btn-rounded
-		border-radius: 50px
 		text-transform: uppercase
-		padding: 14px 46px
 		+font-family($roboto-bld)
 		border: none
 		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8)
+		border-radius: 50px
 		outline: none
 		cursor: pointer
 		+nosel
@@ -74,17 +72,22 @@
 			outline: none
 	&.btn-primary
 		font-size: 16px
+		border-radius: 50px
 		background-image: -webkit-linear-gradient( 180deg, rgb(36,222,224) 0%, rgb(36,200,224) 100%)
 		background-image: -ms-linear-gradient( 180deg, rgb(36,222,224) 0%, rgb(36,200,224) 100%)
 		background-image: -o-linear-gradient( 180deg, rgb(36,222,224) 0%, rgb(36,200,224) 100%)
 		background-image: linear-gradient( 180deg, rgb(36,222,224) 0%, rgb(36,200,224) 100%)
 		background-color: $cyan
-		+r(480)
-			padding: 10px 15px
-			font-size: 14px
+		padding: 14px 46px
 		&:hover, &:focus
 			background-color: darken($cyan, 10)
-
+	&.btn-white
+		background-color: $white
+		color: darken($cyan, 10)
+		background-image: -webkit-linear-gradient( -90deg, rgb(255,255,255) 0%, rgb(230,230,230) 100%)
+		background-image: linear-gradient( -90deg, rgb(255,255,255) 0%, rgb(230,230,230) 100%)
+		padding: 15px 55px
+		box-shadow: 1.5px 2.598px 7px 0px rgba(0, 0, 0, 0.059)
 body
 	.btn-up
 		display: block
