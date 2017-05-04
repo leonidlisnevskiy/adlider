@@ -19,6 +19,16 @@ function video_frame(){
 	});
 };
 
+$body = $("body");
+$window = $(window);
+
+$window.scroll(function(){
+	if ( $window.scrollTop() > 0) {
+		$body.addClass("is-fixed");
+	} else{
+		$body.removeClass("is-fixed");
+	}
+});
 
 $(document).ready(function() {
 

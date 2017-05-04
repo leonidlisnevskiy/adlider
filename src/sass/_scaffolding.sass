@@ -209,11 +209,25 @@ body
 			&__item
 				display: inline-block
 				vertical-align: top
+				position: relative
+				min-height: 500px
 				.image
 					display: inline-block
 					vertical-align: top
 				p
 					cursor: default
+					&.btn-text
+						position: absolute
+						z-index: 9999
+						top: 44%
+						font-size: 20px
+						+font-family($roboto-reg)
+						-webkit-transform: translateY(-50%)
+						color: rgba($text, .50)
+					&.btn-text__next
+						right: 0
+					&.btn-text__prev
+						left: 0
 		.slick-dots
 			bottom: 0
 
