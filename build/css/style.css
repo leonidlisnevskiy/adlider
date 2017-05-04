@@ -259,6 +259,8 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
 .popup-container .modal-body { padding-top: 0 !important; }
 .popup-container .modal-body:after { content: ""; display: table; clear: both; }
 .popup-container .modal-body .repair__link { float: right; color: #14bec0; }
+.popup-container .modal-body.register { text-align: center; }
+.popup-container .modal-body.register p { font-size: 14px; font-family: "roboto-medium", Arial, sans-serif; }
 .popup-container .modal-body, .popup-container .modal-footer, .popup-container .modal-header { border: none; }
 .popup-container .modal-body, .popup-container .modal-footer { padding: 30px; }
 .popup-container .modal-footer { text-align: center; padding-top: 0; }
