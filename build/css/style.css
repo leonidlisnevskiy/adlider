@@ -219,8 +219,9 @@ body .slider-review .slick-dots li.slick-active button, body .slider-preview .sl
 .partners .list-logos:hover:after { height: 0; }
 
 .list-circle-icons { list-style-type: none; padding: 0; font-size: 0; margin-bottom: 50px; }
-.list-circle-icons li { display: inline-block; width: 20%; padding: 0 20px; vertical-align: top; }
-.list-circle-icons li p { color: #0e6f70; font-family: "roboto-regular", Arial, sans-serif; font-size: 13px; }
+.list-circle-icons li { display: inline-block; width: 19%; padding: 0 20px; vertical-align: top; margin-bottom: 60px; }
+.list-circle-icons li.margin-zero { margin: 0; }
+.list-circle-icons li p { color: #0e6f70; font-family: "roboto-regular", Arial, sans-serif; font-size: 13px; margin-bottom: 0; }
 .list-circle-icons li p.circle-title { font-size: 18px; color: #fff; font-family: "roboto-bold", Arial, sans-serif; line-height: 1; margin: 20px auto 15px; }
 .list-circle-icons li .images { margin: 0 auto; position: relative; width: 100px; height: 100px; display: block; }
 .list-circle-icons li .images:before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; background-size: cover; background-image: url("../img/circle-shape.png"); }
@@ -315,12 +316,12 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .slider-review .review__title { font-size: 38px; }
  .preview { padding: 30px 0; }
  .preview__desc { top: 90px; }
- .list-circle-icons { margin-bottom: 0; }
  .list-circle-icons li { width: 33%; padding: 0 10px; margin-bottom: 20px; }
  .user__info { text-align: center; } }
 @media only screen and (max-width: 769px) {
  .header .navbar-nav { margin-bottom: 0; }
- .header .navbar-nav li { display: inline-block; } }
+ .header .navbar-nav li { display: inline-block; }
+ .list-circle-icons { margin-bottom: 30px; } }
 @media (min-width: 768px) {
  .popup-container .modal-dialog { width: 410px; } }
 @media only screen and (max-width: 768px) {
@@ -389,7 +390,7 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .preview .preview__title { font-size: 22px; }
  .partners { padding: 30px 0; }
  .partners h3 { margin: 0 auto 25px; font-size: 28px; }
- .list-circle-icons li { width: 100%; }
+ .list-circle-icons li { width: 50%; }
  .list-arrows { width: 100%; margin-top: 10px; } }
 @media only screen and (max-width: 480px) {
  .header { height: 490px; }
@@ -410,9 +411,6 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .partners p { text-align: center; margin-bottom: 20px; }
  .list-circle-icons li { padding: 0; }
  .list-circle-icons li p.circle-title { margin: 0 auto 10px; }
- .list-circle-icons li .images { height: auto; width: initial; }
- .list-circle-icons li .images:before { display: none; }
- .list-circle-icons li .images svg, .list-circle-icons li .images i, .list-circle-icons li .images img { position: static; -ms-transform: translate(0px); transform: translate(0px); }
  .user__info { text-align: left; }
  .user__info li { width: 100%; margin-left: 0; margin-bottom: 20px; font-size: 20px; } }
 @media only screen and (max-width: 367px) {
