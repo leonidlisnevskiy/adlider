@@ -45,12 +45,12 @@
 			top: 50%
 			right: 0
 			-webkit-transform: translateY(-50%)
+			transform: translateY(-50%)
 			+r(668)
 				display: none
 	ul.text-gray li a
 		color: rgba($white, 0.4)
-		+r(768)
-			display: inline-block
+		display: inline-block
 		&:hover
 			color: rgba($white, 0.8)
 	ul li
@@ -126,7 +126,9 @@
 			left: 50%
 			color: transparent
 			-webkit-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
 			color: $dark-bg
 			-webkit-transition: all .24s ease-in-out
+			transition: all .24s ease-in-out
 			+r(668)
 				font-size: 14px

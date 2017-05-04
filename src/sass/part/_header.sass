@@ -1,6 +1,7 @@
 // header
 .header
 	position: relative
+	overflow: hidden
 	+r(1367)
 		height: 650px
 	+r(992)
@@ -37,6 +38,7 @@
 	&__logo
 		position: absolute
 		-webkit-transform: translateX(50%)
+		transform: translateX(50%)
 		z-index: 100
 		+r(768)
 			top: 10px
@@ -64,6 +66,7 @@
 			background-color: transparent
 			will-change: transition, background-color, padding-top
 			-webkit-transition: background-color .24s linear, padding-top .22s ease
+			transition: background-color .24s linear, padding-top .22s ease
 			padding-bottom: 20px
 			+r(768)
 				padding-top: 0
@@ -82,6 +85,7 @@
 				svg path
 					will-change: transition, fill
 					-webkit-transition: fill .24s ease
+					transition: fill .24s ease
 				.navbar-nav > li > a
 					color: $black
 				.user__info li a,
@@ -151,6 +155,7 @@
 			font-size: $text-sm //14px
 			+font-family($roboto-light)
 			-webkit-transition: all .24s ease-in-out
+			transition: all .24s ease-in-out
 
 // video
 .promo
@@ -176,6 +181,7 @@
 	position: relative
 	width: 1920px
 	-webkit-transform: scale(1.02)
+	transform: scale(1.02)
 .video-holder video
 	display: inline-block
 	width: 100%

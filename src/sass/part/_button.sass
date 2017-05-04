@@ -113,8 +113,6 @@ body
 	display: block
 	will-change: transition, color, border-color
 	-webkit-transition: all .24s ease-in-out
-	+r(568)
-		display: none
 	&-fixed
 		position: absolute
 		bottom: 60px
@@ -122,6 +120,8 @@ body
 		left: 50%
 		-webkit-transform: translateX(-50%)
 		text-decoration: none
+		+r(568)
+			display: none
 	&:hover
 		border-color: $white
 		&:after

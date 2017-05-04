@@ -23,17 +23,20 @@
 			margin-left: 0
 			&:checked:before
 				-webkit-transform: translate(0px, 3px)
+				transform: translate(0px, 3px)
 				opacity: 1
 			&:after
 				content: ""
 				display: block
 				will-change: transition, color, background-color
 				-webkit-transition: all .21s ease-in-out
+				transition: all .21s ease-in-out
 				position: absolute
 				width: 20px
 				top: 50%
 				left: 0
 				-webkit-transform: translateY(-50%)
+				transform: translateY(-50%)
 				height: 20px
 				background-color: $cyan
 				border-radius: 4px
@@ -43,8 +46,10 @@
 				background-size: cover
 				width: 10px
 				-webkit-transition: transform .28s ease-in-out, opacity .21s linear
+				transition: transform .28s ease-in-out, opacity .21s linear
 				opacity: 0
 				-webkit-transform: translate(0px, -5px)
+				transform: translate(0px, -5px)
 				z-index: 11
 				content: ""
 				left: 5px
