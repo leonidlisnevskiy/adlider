@@ -256,8 +256,9 @@ body
 						-webkit-transform: translateY(-50%)
 						transform: translateY(-50%)
 						color: rgba($text, .50)
-						+r(1025)
-							top: 155px
+						+r(769)
+							bottom: 100px
+							top: initial
 						+r(700)
 							display: none
 					br
@@ -554,15 +555,6 @@ body
 		top: 70px
 		max-width: 215px
 		vertical-align: top
-		+r(1025)
-			position: static
-			max-width: initial
-			width: 49%
-			margin: 0 auto
-			text-align: center
-		+r(568)
-			width: 100%
-			margin-top: 10px
 		li
 			display: block
 		li p
@@ -578,9 +570,13 @@ body
 	&-arrows-gray //del
 		text-align: right
 		left: 13%
+		+r(1025)
+			left: 0
 	&-arrows-cyan
 		text-align: left
 		right: 19.5%
+		+r(1025)
+			right: 0
 p.desc
 	color: #0e6f70
 	font-size: 13px
