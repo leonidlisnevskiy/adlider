@@ -37,7 +37,6 @@ if (window.jQuery){
 		}
 	});
 
-	$(document).ready(function() {
 
 		//animate scroll
 		$('.js-scroll-to').on("click", function(e){
@@ -127,6 +126,4 @@ if (window.jQuery){
 			]
 		});
 	});
-
-});
 };
