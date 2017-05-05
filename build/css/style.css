@@ -236,7 +236,7 @@ body .slider-review .slick-dots li.slick-active button, body .slider-preview .sl
 .list-arrows { list-style-type: none; padding: 0; margin: 0; position: absolute; display: inline-block; top: 88px; max-width: 215px; vertical-align: top; }
 .list-arrows li { display: block; margin: 5px 0; }
 .list-arrows li p { color: #071a26; font-family: "roboto-regular", Arial, sans-serif; font-size: 16px; max-width: initial; width: initial; display: inline-block; margin: 0; line-height: 1; font-size: 16px; position: relative; }
-.list-arrows-gray li p:after { content: ""; display: block; position: absolute; top: 50%; left: 0; width: 100px; height: 7px; background-image: url("../img/arrow-gray.png"); background-repeat: no-repeat; background-size: cover; background-position: center center; -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.list-arrows-gray li p:after { content: ""; display: block; position: absolute; top: 50%; right: -110px; width: 100px; height: 7px; background-image: url("../img/arrow-gray.png"); background-repeat: no-repeat; background-size: 100%; background-position: center center; -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .list-arrows-gray { text-align: right; left: 13%; z-index: 9999; }
 .list-arrows-cyan li p:after { content: ""; display: block; position: absolute; top: 50%; left: -142px; width: 135px; height: 7px; background-image: url("../img/arrow-cyan.png"); background-repeat: no-repeat; background-position: center center; background-size: cover; -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .list-arrows-cyan { text-align: left; right: 19.5%; }

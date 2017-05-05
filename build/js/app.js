@@ -22,7 +22,7 @@ function video_frame(){
 var $sliderReview = $(".js-slider-review");
 $sliderReview.slick({
 	arrows: true,
-	autoplay: true,
+	// autoplay: true,
 	draggable: false,
 	slidesToShow: 1,
 	slidesToScroll: 1,
