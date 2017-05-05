@@ -196,7 +196,7 @@ body .slider-review .slick-dots li.slick-active button, body .slider-preview .sl
 .slider-preview .preview__item { display: inline-block; vertical-align: top; position: relative; }
 .slider-preview .preview__item .image { display: inline-block; vertical-align: top; max-width: 270px; height: 240px; overflow: hidden; position: relative; }
 .slider-preview .preview__item .image.image-fix { position: relative; }
-.slider-preview .preview__item .image.image-fix:after { content: ""; display: none; position: absolute; background-color: #fff; bottom: 124px; width: 2px; height: 16px; left: 293px; }
+.slider-preview .preview__item .image.image-fix:after { content: ""; display: none; position: absolute; background-color: #fff; bottom: 124px; width: 3px; height: 16px; left: 293px; }
 .slider-preview .preview__item p { cursor: default; margin: 0 auto; max-width: 600px; }
 .slider-preview .preview__item p br { display: none; }
 .slider-preview .slick-dots { bottom: 0; }
