@@ -438,7 +438,7 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
 @media only screen and (max-width: 415px) {
  .slider-preview .preview__item .image.image-fix:after { left: 213px; } }
 @media only screen and (max-width: 375px) {
- .slider-preview .preview__item .image.image-fix:after { left: 196px; } }
+ .slider-preview .preview__item .image.image-fix:after { left: 195px; } }
 @media only screen and (max-width: 367px) {
  .header { height: 420px; } }
 @media only screen and (max-width: 321px) {
