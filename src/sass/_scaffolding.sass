@@ -250,6 +250,7 @@ body
 					max-width: 270px
 					height: 240px
 					overflow: hidden
+					position: relative
 					+r(1025)
 						max-width: 100%
 						width: 100%
@@ -257,6 +258,28 @@ body
 					img
 						+r(1025)
 							margin: 0 auto
+					&.image-fix
+						position: relative
+						&:after
+							content: ""
+							display: none
+							position: absolute
+							background-color: $white
+							bottom: 124px
+							width: 1px
+							height: 16px
+							left: 293px
+							+r(569)
+								display: block
+							+r(415)
+								left: 216px
+							+r(375)
+								left: 196px
+							+r(321)
+								bottom: 131px
+								left: 166px
+								width: 1.5px
+								background-color: rgba($white, .94)
 				p
 					cursor: default
 					margin: 0 auto

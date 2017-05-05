@@ -33,6 +33,12 @@ $sliderReview.slick({
 		settings: {
 			dots: true
 		}
+	},
+	{
+		breakpoint: 481,
+		settings: {
+			arrows: false
+		}
 	}
 	]
 });
