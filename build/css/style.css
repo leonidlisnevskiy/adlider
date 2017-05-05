@@ -48,6 +48,7 @@
 .header.header__common { padding-bottom: 0; }
 .header.header__common .navbar-brand { display: inline-block; }
 .header:before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; z-index: 12; pointer-events: none; background-color: rgba(0, 0, 0, 0.75); height: 100%; }
+.header:after { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; z-index: 2; pointer-events: none; background-color: rgba(22, 109, 164, 0.3); height: 100%; }
 .header__logo { position: absolute; -ms-transform: translateX(50%); transform: translateX(50%); z-index: 100; }
 .header .navbar-fixed-top .navbar-collapse, .header .navbar-fixed-bottom .navbar-collapse { max-height: initial; }
 .header .navbar-collapse.in { overflow-y: initial; }
@@ -73,7 +74,7 @@
 .header .navbar-nav li a { padding: 0; font-size: 14px; font-family: "roboto-light", Arial, sans-serif; transition: all 0.24s ease-in-out; }
 
 .promo { overflow: hidden; position: relative; height: 100%; z-index: 11; }
-.promo:before { content: ""; display: block; background-image: linear-gradient(-135deg, rgba(36, 220, 224, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%); background-image: -ms-linear-gradient(-135deg, rgba(36, 220, 224, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%); position: absolute; top: 0; left: 0; width: 100%; z-index: 9; pointer-events: none; height: 100%; }
+.promo:before { content: ""; display: block; background-color: rgba(22, 109, 164, 0.7); position: absolute; top: 0; left: 0; width: 100%; z-index: 9; pointer-events: none; height: 100%; }
 
 .video-holder { position: relative; width: 1920px; -ms-transform: scale(1.02); transform: scale(1.02); }
 

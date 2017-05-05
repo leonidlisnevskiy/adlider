@@ -35,6 +35,17 @@
 		pointer-events: none
 		background-color: rgba($black, .75)
 		height: 100%
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 2
+		pointer-events: none
+		background-color: rgba(#166da4, 0.30)
+		height: 100%
 	&__logo
 		position: absolute
 		-webkit-transform: translateX(50%)
@@ -166,10 +177,7 @@
 	&:before
 		content: ''
 		display: block
-		background-image: linear-gradient( -135deg, rgba($cyan, .8) 0%, rgba($black, .8) 100%)
-		background-image: -moz-linear-gradient( -135deg, rgba($cyan, .8) 0%, rgba($black, .8) 100%)
-		background-image: -webkit-linear-gradient( -135deg, rgba($cyan, .8) 0%, rgba($black, .8) 100%)
-		background-image: -ms-linear-gradient( -135deg, rgba($cyan, .8) 0%, rgba($black, .8) 100%)
+		background-color: rgba(#166da4, .7)
 		position: absolute
 		top: 0
 		left: 0
