@@ -62,33 +62,33 @@ body.is-fixed
 		padding: 0
 		margin: 0
 		+cover
+		z-index: 111
+		top: 36%
 		border-radius: 50px
 		&:focus
 			outline: none
 		+r(480)
 			display: none
+		span
+			font-size: 30px
+			color: #808a90
 	&-next
 		background-image: url("../img/svgo/arrow-next.svg")
-		right: -160px
-		+r(1166)
-			right: 0
-		+r(1025)
-			right: -60px
-		+r(992)
-			right: 0
-		+r(568)
-			display: none
+		right: 6%
+		span
+			left: 150%
+			top: 0
+			position: absolute
+			display: block
+			width: 300px
 	&-prev
 		background-image: url("../img/svgo/arrow-prev.svg")
-		left: -160px
-		+r(1166)
-			left: 0
-		+r(1025)
-			left: -60px
-		+r(992)
-			left: 0
-		+r(568)
-			display: none
+		span
+			right: 150%
+			top: 0
+			position: absolute
+			display: block
+			width: 300px
 
 // slick-dots
 body
@@ -247,33 +247,10 @@ body
 					cursor: default
 					margin: 0 auto
 					max-width: 600px
-					&.btn-text
-						position: absolute
-						z-index: 9999
-						top: 200px
-						font-size: 20px
-						+font-family($roboto-reg)
-						-webkit-transform: translateY(-50%)
-						transform: translateY(-50%)
-						color: rgba($text, .50)
-						+r(769)
-							bottom: 100px
-							top: initial
-						+r(700)
-							display: none
 					br
 						display: none
 						+r(1025)
 							display: block
-				.btn-text
-					&__next
-						right: 35px
-						+r(1025)
-							right: 0
-					&__prev
-						left: 30px
-						+r(1025)
-							left: 0
 		.slick-dots
 			bottom: 0
 
@@ -385,11 +362,6 @@ body
 		position: relative
 		+r(568)
 			font-size: 22px
-	.slick
-		&-next,
-		&-prev
-			z-index: 12
-			top: 40%
 
 // partners
 .partners
