@@ -234,11 +234,11 @@ body .slider-review .slick-dots li.slick-active button, body .slider-preview .sl
 .list-circle-icons li .images:before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; background-size: cover; background-image: url("../img/circle-shape.png"); }
 .list-circle-icons li .images svg, .list-circle-icons li .images i, .list-circle-icons li .images img { position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .list-arrows { list-style-type: none; padding: 0; margin: 0; position: absolute; display: inline-block; top: 88px; max-width: 215px; vertical-align: top; }
-.list-arrows li { display: block; }
+.list-arrows li { display: block; margin: 5px 0; }
 .list-arrows li p { color: #071a26; font-family: "roboto-regular", Arial, sans-serif; font-size: 16px; max-width: initial; width: initial; display: inline-block; margin: 0; line-height: 1; font-size: 16px; position: relative; }
 .list-arrows-gray li p:after { content: ""; display: block; position: absolute; top: 50%; left: 0; width: 100px; height: 7px; background-image: url("../img/arrow-gray.png"); background-repeat: no-repeat; background-size: cover; background-position: center center; -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .list-arrows-gray { text-align: right; left: 13%; z-index: 9999; }
-.list-arrows-cyan li p:after { content: ""; display: block; position: absolute; top: 50%; left: -130px; width: 120px; height: 7px; background-image: url("../img/arrow-cyan.png"); background-repeat: no-repeat; background-position: center center; background-size: cover; -ms-transform: translateY(-50%); transform: translateY(-50%); }
+.list-arrows-cyan li p:after { content: ""; display: block; position: absolute; top: 50%; left: -142px; width: 135px; height: 7px; background-image: url("../img/arrow-cyan.png"); background-repeat: no-repeat; background-position: center center; background-size: cover; -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .list-arrows-cyan { text-align: left; right: 19.5%; }
 
 p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
@@ -328,7 +328,9 @@ p.desc { color: #0e6f70; font-size: 13px; line-height: 1.23; }
  .header .navbar-nav { margin-bottom: 0; }
  .header .navbar-nav li { display: inline-block; }
  .list-circle-icons { margin-bottom: 30px; }
+ .list-arrows-gray li p:after { display: none; }
  .list-arrows-gray { left: 0%; }
+ .list-arrows-cyan li p:after { display: none; }
  .list-arrows-cyan { right: 8%; } }
 @media (min-width: 768px) {
  .popup-container .modal-dialog { width: 410px; } }

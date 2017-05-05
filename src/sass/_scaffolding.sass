@@ -543,6 +543,7 @@ body
 			display: none
 		li
 			display: block
+			margin: 5px 0
 		li p
 			color: $text
 			+font-family($roboto-reg)
@@ -567,6 +568,8 @@ body
 		background-size: cover
 		background-position: center center
 		transform: translateY(-50%)
+		+r(769)
+			display: none
 	&-arrows-gray
 		text-align: right
 		left: 13%
@@ -580,14 +583,16 @@ body
 		display: block
 		position: absolute
 		top: 50%
-		left: -130px
-		width: 120px
+		left: -142px
+		width: 135px
 		height: 7px
 		background-image: url("../img/arrow-cyan.png")
 		background-repeat: no-repeat
 		background-position: center center
 		background-size: cover
 		transform: translateY(-50%)
+		+r(769)
+			display: none
 	&-arrows-cyan
 		text-align: left
 		right: 19.5%
