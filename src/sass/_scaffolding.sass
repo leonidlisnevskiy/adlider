@@ -72,23 +72,27 @@ body.is-fixed
 		span
 			font-size: 30px
 			color: #808a90
-	&-next
-		background-image: url("../img/svgo/arrow-next.svg")
-		right: 6%
-		span
-			left: 150%
-			top: 0
 			position: absolute
+			top: 0
 			display: block
 			width: 300px
+			wrap-space: nowrap
+			z-index: 11
+			opacity: 1
+			visibility: visible
+			line-height: 1.6
+	&-next
+		background-image: url("../img/svgo/arrow-next.svg")
+		span
+			left: 100%
+			+r(1366)
+				left: 50%
 	&-prev
 		background-image: url("../img/svgo/arrow-prev.svg")
 		span
-			right: 150%
-			top: 0
-			position: absolute
-			display: block
-			width: 300px
+			right: 100%
+			+r(1366)
+				right: 50%
 
 // slick-dots
 body
