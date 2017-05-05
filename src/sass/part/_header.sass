@@ -81,9 +81,6 @@
 			padding-bottom: 20px
 			+r(768)
 				padding-top: 0
-			&.affix-top
-				+r(768)
-					background-color: darken($cyan, 20)
 			&.affix
 				background-color: $white
 				padding-top: 20px
@@ -190,6 +187,12 @@
 	width: 1920px
 	-webkit-transform: scale(1.02)
 	transform: scale(1.02)
+	+r(992)
+		top: -200px
+	+r(768)
+		top: -180px
+	+r(568)
+		top: -150px
 .video-holder video
 	display: inline-block
 	width: 100%
