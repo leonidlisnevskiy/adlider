@@ -536,7 +536,7 @@ body
 		margin: 0
 		position: absolute
 		display: inline-block
-		top: 70px
+		top: 88px
 		max-width: 215px
 		vertical-align: top
 		+r(568)
@@ -551,15 +551,43 @@ body
 			width: initial
 			display: inline-block
 			margin: 0
-			line-height: 1.75
-			font-size: 15.99px
-	&-arrows-gray //del
+			line-height: 1
+			font-size: 16px
+			position: relative
+	&-arrows-gray li p:after
+		content: ""
+		display: block
+		position: absolute
+		top: 50%
+		left: 0
+		width: 100px
+		height: 7px
+		background-image: url("../img/arrow-gray.png")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		transform: translateY(-50%)
+	&-arrows-gray
 		text-align: right
 		left: 13%
+		z-index: 9999
 		+r(1025)
 			left: 5%
 		+r(769)
 			left: 0%
+	&-arrows-cyan li p:after
+		content: ""
+		display: block
+		position: absolute
+		top: 50%
+		left: -130px
+		width: 120px
+		height: 7px
+		background-image: url("../img/arrow-cyan.png")
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		transform: translateY(-50%)
 	&-arrows-cyan
 		text-align: left
 		right: 19.5%
