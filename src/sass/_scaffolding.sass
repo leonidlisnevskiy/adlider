@@ -67,6 +67,8 @@ body.is-fixed
 		border-radius: 50px
 		&:focus
 			outline: none
+		+r(769)
+			top: 50%
 		+r(480)
 			display: none
 		span
@@ -539,6 +541,8 @@ body
 		top: 88px
 		max-width: 215px
 		vertical-align: top
+		+r(1025)
+			top: 104px
 		+r(568)
 			display: none
 		li
@@ -568,16 +572,23 @@ body
 		background-size: 100%
 		background-position: center center
 		transform: translateY(-50%)
-		+r(769)
-			display: none
 	&-arrows-gray
 		text-align: right
 		left: 13%
 		z-index: 9999
-		+r(1025)
+		+r(1266)
 			left: 5%
+		+r(1025)
+			left: 4%
 		+r(769)
 			left: 0%
+		&.align-fix
+			+r(1025)
+				left: 2%
+			+r(769)
+				left: 0%
+				li p:after
+					right: -104px
 	&-arrows-cyan li p:after
 		content: ""
 		display: block
@@ -591,15 +602,21 @@ body
 		background-position: center center
 		background-size: cover
 		transform: translateY(-50%)
-		+r(769)
-			display: none
 	&-arrows-cyan
 		text-align: left
 		right: 19.5%
+		+r(1266)
+			right: 16%
+		+r(1201)
+			right: 9%
 		+r(1025)
-			right: 11%
+			right: 12.6%
 		+r(769)
-			right: 8%
+			right: 9.5%
+		+r(737)
+			right: 9%
+		+r(668)
+			right: 4.3%
 
 p.desc
 	color: #0e6f70
