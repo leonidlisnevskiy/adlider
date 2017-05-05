@@ -266,20 +266,20 @@ body
 							position: absolute
 							background-color: $white
 							bottom: 124px
-							width: 1px
+							width: 3px
 							height: 16px
 							left: 293px
 							+r(569)
 								display: block
+							+r(480)
+								left: 248px
 							+r(415)
-								left: 216px
+								left: 213px
 							+r(375)
 								left: 196px
 							+r(321)
 								bottom: 131px
 								left: 166px
-								width: 1.5px
-								background-color: rgba($white, .94)
 				p
 					cursor: default
 					margin: 0 auto
@@ -555,6 +555,7 @@ body
 		left: 50%
 		-webkit-transform: translate(-50%, -50%)
 		transform: translate(-50%, -50%)
+		transform: -webkit-translate(-50%, -50%)
 	&-arrows
 		list-style-type: none
 		padding: 0
